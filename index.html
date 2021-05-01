@@ -17,8 +17,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Saira:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/estilosgenerales.css">
+<link rel="stylesheet" href="css/estilosgenerales.css">    
+<link rel="stylesheet" href="css/style.css">
+   
 
     </head>
 <body>
@@ -85,53 +86,148 @@
     <a href="https://www.ticketek.com.ar/">Comprá <br>tu entrada</a>
 </div>
 
-
-    <section id="actividadesDestacadas">
-        <div class="subtitulos">
-            <div class="subtitulos__linea"></div>
-            <h2 class="subtitulos__texto">Actividades destacadas</h2>
-         </div>
-
-        <div id="gridActividadesDestacadas">
-            <h3 class="numeroCorte" id="numeroCorteUno">01-</h3>
-            <div class="actividadesDestacadasUno" data-aos="fade-right" data-aos-offset="300"
-            data-aos-easing="ease-in-sine" >
-                <div class="animacionImagenes"><img src="imagenes/actividades05.jpg" alt="Luz estelar" id="imgUno">
+<section id="actividadesDestacadas">
+    <div class="subtitulos">
+        <div class="subtitulos__linea"></div>
+        <h2 class="subtitulos__texto">Actividades destacadas</h2>
+     </div>
+    <div class="gridDestacadas">
+        <div class="contenedorDestacadas" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" >
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="imagenes/actividades05.jpg" alt="Luz estelar" id="imgUno">
                 </div>
-                <div class="animacionImagenes"><img src="imagenes/actividades02.jpg" alt="Caminata espacial" id="img02"></div>
-                <div class="animacionImagenes"><img src="imagenes/observacion03-01.jpg" alt="la Tierra" id="img03"></div>                     
+                <div class="flip-card-back">
+                    <h3 class="tituloActividad">Novas Urbanas</h3>
+                    <div class="estrellaBlanca"></div>
+                    <p class="textoActividad">En este Workshop te enseñamos a observar las Novas más incógnitas e indivisibles. Cómo observar el cielo desde la ciudad más allá de la contaminación lumíninca.</p>
+                            <div class="datosActividad">
+                                <p><b>Zona:</b> 01</p>
+                                <p><b>Hora:</b> 21hs</p>
+                                <p>W.02</p>
+                            </div>
+                </div>
+                </div>
             </div>
-            <aside class="masInfo" id="asideUno">
-                    <h3 class="masInfo__encabezado">Día 01 - +info</h3>
-                    <ul class="masInfo__lista estrellas">
-                        <li>22 de octubre</li>
-                        <li>19hs</li>
-                        <li>4 zonas</li>
-                        <li>30 actividades</li>
-                        <li>Foodtruck zone</li>
-                    </ul>
-                </aside>
-        
-            <h3 class="numeroCorte"  id="numeroCorteDos">-02</h3>
-             <aside class="masInfo" id="asideDos"> 
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="imagenes/actividades02.jpg" alt="Caminata espacial">
+                </div>
+                <div class="flip-card-back">
+                    <h3 class="tituloActividad">Caminata Espacial</h3>
+                    <div class="estrellaBlanca"></div>
+                    <p class="textoActividad">Un Workshop único que te invita a disfrutar de las mejores imágenes y aventuras de una Caminata Espacial. Un recorrido 3D por toda la Estación Espacial, con testimonios únicos.</p>
+                            <div class="datosActividad">
+                                <p><b>Zona:</b> 05</p>
+                                <p><b>Hora:</b> 23hs</p>
+                                <p>W.03</p>
+                            </div>
+                </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="imagenes/observacion03-01.jpg" alt="la Tierra" id="img03">                     
+                </div>
+                <div class="flip-card-back">
+                    <h3 class="tituloActividad">La Gravedad en Marte</h3>
+                    <div class="estrellaBlanca"></div>
+                    <p class="textoActividad">Viví una experiencia única, viaja a Marte y experimenta su Gravedad. Un debate con expertos acerca de las posibilidades que existen de encontrar vida fuera de la Tierra.</p>
+                    <div class="datosActividad">
+                        <p><b>Zona:</b> 02</p>
+                        <p><b>Hora:</b> 29hs</p>
+                        <p>W.01</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <h3 class="numeroCorte" id="numeroCorteUno">01-</h3>
+        <aside class="masInfo" id="asideUno">
+            <h3 class="masInfo__encabezado">Día 01 - +info</h3>
+            <ul class="masInfo__lista estrellas" id="listaWrap">
+                <li>22 de octubre</li>
+                <li>19hs</li>
+                <li>4 zonas</li>
+                <li>30 actividades</li>
+                <li>Foodtruck zone</li>
+            </ul>
+        </aside>
+
+        <div class="contenedorDestacadasDos"  data-aos="fade-left" data-aos-delay="50" data-aos-easing="ease-in-sine">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="imagenes/movimiento01-01.jpg" alt="Velocidad en autopista" id="img04">                </div>
+                <div class="flip-card-back">
+                    <h3 class="tituloActividad">Velocidad de la Luz</h3>
+                    <div class="estrellaBlanca"></div>
+                    <p class="textoActividad">¿Qué es la Velocidad de la Luz? ¿Cómo es viajar a la verlocidad de la Luz?  Definamos a la Velocidad de la Luz en términos urbanos.</p>
+                            <div class="datosActividad">
+                                <p><b>Zona:</b> 02</p>
+                                <p><b>Hora:</b> 21hs</p>
+                                <p>D.A.02</p>
+                            </div>
+                </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="imagenes/actividades0802.jpg" alt="Naves espaciales" id="img05">              
+                </div>
+                <div class="flip-card-back">
+                    <h3 class="tituloActividad">Simulador NASA</h3>
+                    <div class="estrellaBlanca"></div>
+                    <p class="textoActividad">¿Te animás a tomar el control de la Nave, y llevar a tu triplación a la Luna? Vení, subite al simulador y sentite un astronauta viajando a la Luna.</p>
+                            <div class="datosActividad">
+                                <p><b>Zona:</b> 03</p>
+                                <p><b>Hora:</b> 20hs</p>
+                                <p>W.02</p>
+                            </div>
+                </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="imagenes/actividades07.jpg" alt="E.E.I." id="img06">               
+                </div>
+                <div class="flip-card-back">
+                    <h3 class="tituloActividad">Vida Extraterrestre</h3>
+                    <div class="estrellaBlanca"></div>
+                    <p class="textoActividad">Un debate con expertos acerca de las posibilidades que existen de encontrar vida fuera de la Tierra.</p>
+                    <div class="datosActividad">
+                        <p><b>Zona:</b> 01</p>
+                        <p><b>Hora:</b> 22hs</p>
+                        <p>D.A.04</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+            
+        </div>
+    
+        <h3 class="numeroCorte"  id="numeroCorteDos">-02</h3>
+        <aside class="masInfo" id="asideDos"> 
                     <h3 class="masInfo__encabezado">Día 02 - +info</h3>
-                    <ul class="masInfo__lista estrellas">
+                    <ul class="masInfo__lista estrellas" id="listaWrap">
                         <li>23 de octubre</li>
                         <li>19hs</li>
                         <li>4 zonas</li>
                         <li>30 actividades</li>
                         <li>Foodtruck zone</li>
                     </ul>
-                </aside>
-                <div class="actividadesDestacadasDos" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
-                    <div class="animacionImagenes"><img src="imagenes/movimiento01-01.jpg" alt="Velocidad en autopista" id="img04"></div>   
-                    <div class="animacionImagenes"><img src="imagenes/actividades0802.jpg" alt="Naves espaciales" id="img05"></div>  
-                    <div class="animacionImagenes"><img src="imagenes/actividades07.jpg" alt="E.E.I." id="img06"></div>
-                </div>
-        
-        </div>
-    </section>
-
+        </aside>
+    
+    </div>
+    
+</section>
     <section class="elFestivalHome">
         <div id="imagenesFestivalContenedorDos">
             <img src="imagenes/movimiento03.jpg" alt="Haz de luz">
@@ -215,7 +311,7 @@
             </div>
         </div>
     </section>
-  
+
     <section class="seccionUbicacion">
 
         <div class="subtitulos" id="veniEncontranos">
