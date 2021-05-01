@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="fuentes/MonumentExtended-Regular.ttf" rel="stylesheet">
+
+    <title>Contacto| Festival de Astronomía Urbana</title>
+    <meta name="description" content="querés conocer más acerca del festival? No dudes en escribirnos para conocer todo acerca del Festival de Astronomía Urbana en Buenos Aires">
+    <meta name="keywords"  content="saber mas, festival, astronomía, urbana, buenos aires, cielo urbano, fenomenos del cielo, comprender astronomia">
+   
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/estilosgenerales.css">
+
+    </head>
+<body>
+    <header class="header">
+        <div class="header__logo">
+             <a href="index.html">
+                 <img src="imagenes/logoblanco-01.svg" alt="Nova">
+            </a>
+        </div>
+        <nav class="header__nav" id="menuDesk">
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="festival.html">el Festival</a></li>
+                <li><a href="observatorio.html">Observatorio</a></li>
+                <li><a href="workshops.html">Workshops</a></li>
+                <li> <a href="dialogos.html">Diálogos Astronómicos</a></li>
+                <li> <a href="contacto.html">Contactanos</a></li>
+            </ul> 
+        </nav>
+    </header>
+
+    <div id="pagesImage">
+
+        <div class="gridLandings">
+            <div id="fondoHome"></div>
+        
+            <h1 id="tituloContacto" class="animate__animated animate__fadeInUp" >¡Contactános!</h1>
+            <p class="datos"id="lugarPosicionO">Planetario de Buenos Aires</p>
+            <p class="datos" id="lugarEdicionO">Edición II</p>
+            <p id="festivalPosicion">Festival de Astronomía Urbana</p>
+
+            <div class="cuadradoGrande" id="cuadradoContactoUno">
+            <img src="imagenes/movimiento05_04_vertical.jpg" alt="movimiento en autopista">
+            </div>
+
+            <div class="cuadradoChico" id="cuadradoContactoDos">
+                <img src="imagenes/actividades05_01.jpg" alt="la Luna">
+                
+            </div>
+        
+
+            <div class="cuadradoChico" id="cuadradoContactoTres">
+                    <img src="imagenes/movimiento05_01}.jpg" alt="moviemiento en avenida">
+            </div>
+
+            <div class="cuadradoChico" id="cuadradoContactoCuatro">
+                <img src="imagenes/observacion09.jpg" alt="galaxia MV08">
+            </div>
+            <section id="formContacto" class="animate__animated animate__fadeInUp" >
+
+                
+                <form action="contacto.php" method="POST" enctype="application/x-www-form-urlencoded">
+                    <fieldset>
+                  
+                        <input type="text" placeholder="Tu nombre y apellido" id="nombre" class="formRecuadro" required>
+                
+                   
+                        <input type="email" placeholder="Tu mail" id="mail" class="formRecuadro" required>
+    
+                   
+                        <input type="text" placeholder="Tu teléfono" id="telefono" class="formRecuadro" required>
+          
+                    </fieldset>
+        
+                    <fieldset>
+                        <div id="parteStaff">
+                            <label id="ratio">¿Formas parte del staff?</label>
+                            Si<input type="radio" name="staff" value="si" class="ratio">
+                            No<input type="radio" name="staff" value="no" class="ratio">
+                        </div>
+                    <br>
+                
+                        <select name="motivo" id="motivo">
+                            <option value="activides">Motivo de consulta</option>
+                            <option value="activides">Sobre las actividades</option>
+                            <option value="entradas">Sobre las entradas</option>
+                            <option value="general">Sobre del Festival</option>
+                            <option value="staff">Quiero formar parte de Nova</option>
+                            <option value="staff">?Tengo una idea para sumar!</option>
+                            <option value="otro">Otra</option>
+                        </select>
+                
+                        <textarea id="consulta" cols="30" rows="10" placeholder="Consulta" required></textarea>
+        
+                    </fieldset>
+        
+                    <label for="suscripción" id="ratio">¿Querés suscribirte al newsletter?</label>
+                    Si <input type="checkbox" name="newsletter" value="si" class="ratio">
+                    
+        
+                     <div class="botonesForm">                   
+                         <input type="reset" value="Vaciar consulta" class="botonesForm__boton">
+                         <input type="submit" value="Enviar consulta" class="botonesForm__boton">
+                    </div>
+                </form>
+
+                
+            </section>
+        </div>
+
+       
+    </div> 
+
+   
+
+  <footer class="footer">
+        <p class="footer__texto">Festival de Astronomía Urbana, Planetario de Buenos Aires</p>
+        <div class="footer__iconos">
+            <img src="imagenes/instagram.svg" alt="Instagram">
+            <img src="imagenes/facebook.svg" alt="Facebool">
+            <img src="imagenes/envelope.svg" alt="Mail">
+        </div>
+
+    </footer>
+
+    <script src="js/wow.min.js"></script>
+<script>
+new WOW().init();
+</script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+AOS.init();
+</script>
+</body>
+</html>

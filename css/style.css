@@ -1,0 +1,1786 @@
+/**estilos generales ------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+
+
+
+
+
+
+a{
+    text-decoration: none;
+}
+h1 {
+    color:rgba(35, 36, 37);
+    font-family: 'MonumentExtended', 'Saira', sans-serif;
+    font-size: 1em;
+
+}
+
+h2 {
+    font-size:3em;
+}
+
+h3 {
+    font-size: 1.1em;
+    font-weight: 800;
+}
+
+.bajada {
+    padding: 0 0 0 10%;
+    color: rgba(35, 36, 37);
+    font-size: 1.2em;
+
+}
+
+/**landing ------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+
+#homeImage {
+    background-image: url(../imagenes/homebackground02.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    max-width: 100vw;
+    filter: opacity(90%);
+    z-index: 10;
+    display: grid;
+    grid-template-columns: repeat(5,20%);
+    grid-template-rows: repeat(5,20%);
+    overflow: hidden;
+    box-shadow:0 16px 32px 0 rgba(0, 0, 0, 0.2);
+    
+}
+
+#fondoHome {
+    z-index: -999;
+    background-color: rgba(0, 0, 0, 0.705);
+    height: 100vh;
+    grid-row: 1 / 6;
+    grid-column: 1 / 6;
+
+}
+
+#homeImage h1 {
+    color: rgb(255, 255, 255);
+    font-size: 3.3em;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    line-height: 1.5em;
+    grid-column: 2 / 4;
+    grid-row: 1/4;
+    z-index: 10;
+    align-self: center;
+    text-shadow:rgb(0, 0, 0) 5px 5px 10px; 
+    margin-top: 1em;
+
+}
+
+
+
+
+
+
+
+#homeImage .bajada {
+    color: rgb(255, 255, 255);
+    font-size: 2em;
+}
+
+#imagenPresentacion {
+    grid-column: 3 / 5;
+    grid-row: 1 / 6;
+    width: 90%;
+    overflow: hidden;
+    justify-self: flex-end;
+    align-self: center;
+    box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2), 0 16px 30px 0 rgba(0, 0, 0, 0.19);
+    border: .07em solid white;
+}
+
+#imagenPresentacion img{
+    max-width: 100%;
+    border-radius: 100%;
+    border: .15em solid white;
+    
+
+}
+
+
+#textoPresentacion {
+    grid-column: 2 / 3;
+    grid-row: 3 / 6;
+    z-index: 20;
+    color: white;
+    border-left: .2em solid white;
+    padding-left: 2em;
+    align-self: center;
+    padding-bottom: 2em;
+  width: 100%;
+  margin: 1em auto;
+}
+
+#textoPresentacion h3{
+    font-family: 'MonumentExtended', 'Saira', sans-serif;
+    color: white;
+    font-size: 2em;
+}
+#textoPresentacion p{
+   padding-top: 1.4em;
+}
+
+#compraEntrada {
+    color: white;
+    font-size: 1em; 
+    display: block;
+    background-image: url(../imagenes/iconoentrada.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: all .6s linear;
+    position: fixed;
+    bottom: 3em;
+    left: 5em;
+    z-index: 998;
+    
+ }
+ #compraEntrada a{
+    color: white;
+    z-index: 99;
+    font-size: 1em; 
+    display: block;
+    text-align: center;
+    margin: auto;
+    padding: 3em 3.5em 3.5em 3.5em;
+    line-height: 1.2em;
+
+ 
+ }
+
+ #compraEntrada:hover {
+transform:rotate(360deg) scale(1.2);
+
+ }
+
+
+
+/** menu ------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+
+#menuMobile {
+    display:none;
+}
+
+
+
+
+
+/**body ------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+
+
+section p{
+    margin: 2em 0;
+    line-height: 2em;
+ }
+
+
+
+
+
+
+
+
+/** home ------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+
+section {
+    margin: 0 10% 0 10%;
+    max-width: 100vw;
+     padding-top: 7em;
+    padding-bottom: 4em;
+}
+
+
+
+#gridActividadesDestacadas {
+    margin: 0;
+    height: 100vh;
+    max-width: 100vw;
+    display: grid;
+    grid-template-columns:20% 20% 20% 20% 20%;
+    grid-template-rows: 6% 22% 22% 6% 22% 22%;
+    position: relative;
+
+}
+
+.actividadesDestacadasUno {
+   grid-column: 1 / 5;
+   grid-row: 2 / 4;
+   overflow: hidden;
+}
+
+.actividadesDestacadasUno div{
+    position: relative;
+ }
+ 
+ .actividadesDestacadasUno div img, .actividadesDestacadasDos div img {
+    max-width: 100%;
+    display: block;
+ }
+
+ .animacionImagenes {
+ overflow: hidden;
+
+}
+.animacionImagenes:hover img{
+    transition: 0.5s all ease-in-out;
+
+}
+
+.animacionImagenes:hover img{
+    transform: scale(1.2); 
+}
+
+
+.actividadesDestacadasDos {
+    grid-column: 2 / 6;
+    grid-row: 5 / 7;
+    overflow: hidden;
+}
+
+#numeroCorteUno {
+    align-self: flex-start;
+    justify-self: flex-end;
+    grid-column: 4 / 6;
+    grid-row: 2/4;
+    font-size: 15em;
+    overflow: hidden;
+    z-index: -9;
+    color: rgba(0, 0, 0, 0.041);
+    font-family:'IBM Plex Mono', monospace;
+}
+
+#numeroCorteDos {
+    grid-column: 1 / 3;
+    grid-row: 5 / 7;
+    font-size: 15em;
+    overflow: hidden;
+    justify-self: flex-start;
+    align-self: flex-start;
+    z-index: -9;
+    color: rgba(0, 0, 0, 0.041);
+    font-family:'IBM Plex Mono', monospace;
+}
+
+#asideDos {
+    grid-column: 1 / 2;
+    grid-row: 5 / 7;
+    align-self: flex-end;
+}
+#asideUno {
+    grid-column: 5 / 6;
+    grid-row: 2 / 4;
+    align-self: flex-end;
+}
+
+
+#resumenActividadesSection {
+margin: 0;
+background-color:rgba(35, 36, 37);
+padding: 7em 0;
+
+}
+
+#resumenActividadesSection #actividadesHome, #resumenActividadesSection .subtitulos {
+  color: white;
+  margin-left: 10%;
+    }
+
+#resumenActividadesSection .subtitulos h2 {
+    color: white;
+}
+
+
+#resumenActividades {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 4em 10%;
+}
+
+
+
+
+
+.actividadesDestacadasUno {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.actividadesDestacadasUno div {
+    width: 33.3%;
+}
+.actividadesDestacadasUno div img {
+    max-width: 100%;
+}
+
+.actividadesDestacadasDos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.actividadesDestacadasDos div {
+    width: 33.3%;
+
+}
+.actividadesDestacadasDos div img {
+    max-width: 100%;
+}
+
+
+.elFestivalHome {
+    margin: 0;
+    margin-top: 7em;
+    padding:0;
+    background-color:rgba(0, 0, 0, 0.705);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#elFestivalBajada h2 {
+    color: rgb(243, 242, 242);
+}
+
+
+#elFestivalBajada {
+    padding-left: 5em;
+    color: white;
+    max-width: 40%;
+    margin-top: 3em;
+}
+
+
+#imagenesFestivalContenedorDos {
+    max-width: 50%;
+    max-height: 100vh;
+    overflow: hidden;  
+    filter: grayscale(100) opacity(85%);
+}
+
+#imagenesFestivalContenedorDos img, #imagenesFestivalContenedorUno img {
+    max-height: 100%;
+    max-height: auto;
+    filter: grayscale(100) opacity(85%);
+    
+}
+
+#encabezadoFrase {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: .15em solid white;
+    border-bottom: .15em solid white;
+    padding: .3em 0;
+    margin-top: 3em;
+
+}
+
+#encabezadoFrase h3 {
+    font-size: 1.5em;
+    font-weight: 400;
+    width: 54%;
+    text-align: right;
+}
+
+#encabezadoFrase h3:first-child{
+    width: 10%;
+    text-align: left;
+    
+}
+
+.lineaEstrellas {
+    background-image: url("../imagenes/estrellablanca.png");
+    background-size: contain;
+    background-repeat: repeat;
+    background-position: center;
+    width: 32%;
+    height: 1.5em;
+
+}
+
+#elFestivalBajada a{
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: .5em 0;
+    margin-top: 2em;
+    border: .05em solid white;
+    color: white;
+}
+
+#elFestivalBajada a:hover{
+   background-color: black;
+}
+
+#elFestivalBajada p:nth-child(4){
+    border-top: .1em solid white;
+    border-bottom: .1em solid white;
+    padding: 1em 0;
+    margin-bottom: 1.3em;
+
+}
+
+#datosPie {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: .1em solid white;
+    border-bottom: .1em solid white;
+    padding: 0;
+    font-size: .9em;
+
+}
+
+#datosPie p{
+ margin: 0;
+}
+
+
+
+
+.contenedorGris {
+    background-color: rgb(226, 226, 226);
+    width: 32%;
+    padding-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.contenedorGris div:first-child{
+ height: 90%;
+}
+
+
+.contenedorGris h2{
+   font-size: 1.7em;
+   text-align: center;
+   border-top: .02em solid black;
+   border-bottom: .02em solid black;
+   padding: .5em 0;
+   margin: 0;
+}
+
+.contenedorData{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+   max-height: 4em;
+   padding: 0;
+ }
+
+ .contenedorGris div img{
+    max-width:4em;
+    display: block;
+}
+
+.contenedorGris div p{
+    padding: 1.5em 3em;
+}
+
+.contenedorGris h3{
+    font-family: 'IBM Plex Mono', monospace;
+    padding-top: 2em;
+    align-self: flex-end;
+    text-align: center;
+    padding-bottom: 1em;
+
+
+}
+.contenedorGris p{
+    padding: 1em 3em;   
+    margin: 0;
+}
+
+.estrella {
+    background-image: url("../imagenes/estrella_Mesa\ de\ trabajo\ 1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 1.2em;
+}
+
+
+
+
+
+
+.seccionUbicacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 9em;
+    max-width: 100vw;
+}
+
+#veniEncontranos {
+width: 40%;
+}
+
+.seccionUbicacion .masInfo h3, .seccionUbicacion .masInfo p{
+    font-family:'IBM Plex Mono', monospace;
+}
+
+.seccionUbicacion .masInfo h3{
+  background-size: 1em;
+  background-image: url("../imagenes/estrella_Mesa\ de\ trabajo\ 1.png");
+  background-repeat: no-repeat;
+  background-position-y: center;
+  padding-left: 1.5em;
+}
+
+.seccionUbicacion .masInfo {
+    max-width: 13%;
+}
+.seccionUbicacion iframe{
+    width: 40%;
+    height: 30em;
+}
+
+#ubicacion {
+    padding: 1em;
+    border-top:.05em solid rgba(35, 36, 37);
+    background-size: 1em;
+  background-image: url("../imagenes/placeholder.svg");
+  background-repeat: no-repeat;
+  background-position-y: center;
+  margin-top: .5em;
+
+}
+
+#ubicacion p{
+    padding: .5em 0 .5em 1em;
+    border-left:.05em solid rgba(35, 36, 37);
+    margin: 0;
+    margin-left: 1em;
+    font-size: .8em;
+}
+
+
+#telefonoPlanetario {
+    padding: 1em;
+    background-size: 1em;
+  background-image: url("../imagenes/telephone.svg");
+  background-repeat: no-repeat;
+  background-position-y: center;
+  margin-top: .5em;
+  font-size: .8em;
+}
+
+#telefonoPlanetario a{
+    color: rgba(35, 36, 37);
+    padding: .5em 0 .5em 1em;
+    border-left:.05em solid rgba(35, 36, 37);
+    margin-left: 1em;
+}
+
+
+
+
+
+/**el Festival ------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+
+.gridLandings {
+    display: grid;
+    grid-template-columns: repeat(4, 25vw);
+    grid-template-rows: repeat(4,25vh);
+    max-width: 100vw;
+    overflow: hidden;
+    box-shadow:0 16px 32px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+
+
+.fondoEncabezado {
+    background-color: rgba(35, 36, 37);
+    height: 100vh;
+    width: 100vw;
+    grid-column: 1 / 5;
+    grid-row: 1 / 5;
+}
+
+#tituloLandingIzquierda {
+    grid-column: 1 /3;
+    margin-left: 25%;
+}
+
+
+#cuadradoFestivalUno {
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
+    overflow: hidden;
+    border: .08em solid rgb(255, 255, 255);
+    filter: grayscale(100);
+}
+#cuadradoFestivalUno img{
+    max-width: 100%; 
+}
+
+#cuadradoFestivalDos {
+    grid-column: 3 / 4;
+    grid-row: 4 / 5;
+    overflow: hidden;
+    border: .08em solid rgb(255, 255, 255);
+    filter: grayscale(100);
+}
+#cuadradoFestivalDos img{
+    max-width: 100%; 
+}
+
+
+
+#cuadradoFestivalTres img, #cuadradoFestivalCuatro img{
+   max-width: 100%;
+}
+
+#cuadradoFestivalCuatro {
+    grid-column: 4 /5;
+    grid-row: 3 / 4;
+    overflow: hidden;
+    border: .08em solid rgb(255, 255, 255);
+    filter: grayscale(100);
+}
+
+#tituloFestival {
+    color:white;
+    z-index: 999;
+    grid-column: 1/3;
+    grid-row: 2 / 3;
+    font-size: 3.5em;
+    justify-self: flex-start;
+    margin-left: 30%;
+    align-self: flex-end;
+    padding-bottom: 3%;
+}
+
+
+#seccionUnoFestival {
+    margin: 0;
+    display: grid;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+    grid-template-columns: 10% repeat(3, 26.6%) 10%;
+    grid-template-rows: 16em repeat(2, 35em);
+    grid-row-gap: 2%;
+    position: relative;
+
+}
+
+#tituloSeccionUnoFestival {
+    grid-column: 2/4;
+    grid-row: 1/2;
+}
+
+.imagenesFestivalContenedor {
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+
+}
+
+.imagenesFestivalContenedor img{
+    max-width: 100%;
+    filter: grayscale(100);
+
+}
+
+
+.destacada {
+    font-size: 6rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: black;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  -webkit-text-stroke-width: .1px;
+  -webkit-text-stroke-color: rgb(119, 119, 119);
+}
+
+
+#tituloMovimientoUno {
+    grid-column: 1/6;
+    grid-row: 2/3;
+    align-self: center;
+    justify-self: flex-start;
+    z-index: -9;
+    overflow: hidden;
+    max-width: 400%;
+}
+
+#supernova {
+    grid-column:3/4;
+    grid-row: 2/3;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+#secretos {
+    grid-column:2/3;
+    grid-row: 3/4;
+    overflow: hidden;
+}
+
+
+#tituloMovimientoDos {
+    grid-column: 1/6;
+    grid-row: 3/4;
+    align-self: center;
+    justify-self: flex-start;
+    z-index: -9;
+    max-width: 800%;
+}
+
+#rayos {
+    grid-column:4/5;
+    grid-row: 3/4;
+    max-width: 90%;
+    overflow: hidden;
+    align-content: flex-start;
+}
+
+
+#rayosTitulo {
+    grid-column: 1/3;
+    grid-row: 3/4;
+    align-self: center;
+    justify-self: center;
+    padding-left: 15%;
+    z-index: 9;
+}
+
+
+#imagenesFestivalContenedorUno {
+    max-width: 50%;
+    max-height: 95vh;
+    overflow: hidden;  
+}
+
+
+#contenedorAcreditacion table{
+    margin: auto;
+    width: 80%;
+}
+
+#contenedorAcreditacion table tr td:nth-child(2){
+    width: 35%;
+}
+
+
+.datos a {
+    color: rgb(53, 53, 53);
+}
+
+
+table {
+    background: white;
+}
+
+th {
+    font-family: 'IBM Plex Mono', monospace;
+    color:white;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: rgb(35, 36, 37);
+}
+
+.estrellas li{
+  list-style: none;
+  background-size: 15px;
+  background-image: url("../imagenes/estrella_Mesa\ de\ trabajo\ 1.png");
+  background-repeat: no-repeat;
+  background-position-y: center;
+  padding-left: 1.5em;
+    
+}
+
+.acreditacionTabla tr td {
+    padding: 0 2em 1em 2em;
+}
+
+
+@keyframes titularMovimiento {
+    0%{
+        transform: translate3d(-1000px, 0, 0);
+      }
+      100%{
+        transform: translate3d(100px, 0, 0);
+      }
+ }
+ 
+ #tituloMovimientoUno {
+    width:6000px;
+    animation: titularMovimiento 3.5s linear infinite;
+  }
+
+  #tituloMovimientoDos {
+    width:6000px;
+    animation: titularMovimiento 3.5s linear infinite;
+    animation-direction: reverse;
+  }
+
+/**Observatorio ------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+
+.iconosFijosSecciones {
+  position: fixed;
+  top: 4.31em;
+  right: 0;
+    z-index: 99;
+    max-width: 5%;
+}
+.iconosFijosSecciones img{
+      max-width: 100%;
+  }
+  
+
+#pagesImage {
+    background-image: url(../imagenes/homebackground02.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    filter: opacity(90%);
+} 
+
+
+#cuadradoObservatoriosUno {
+    grid-column: 1/2;
+    grid-row: 1 / 3;
+    overflow: hidden;
+    border: .08em solid rgb(255, 255, 255);
+    filter: grayscale(100);
+}
+
+#cuadradoObservatoriosUno img{
+  height: 100%;
+}
+
+
+
+#cuadradoObservatoriosDos {
+    grid-column: 2/3;
+    grid-row: 3 / 4;
+    overflow: hidden;
+    border: .08em solid rgb(255, 255, 255);
+    filter: grayscale(100);
+}
+
+#cuadradoObservatoriosDos img{
+    max-width: 100%;
+  }
+
+
+#cuadradoObservatoriosCuatro {
+    grid-column: 2/3;
+    grid-row: 4 / 5;
+    overflow: hidden;
+    border: .08em solid rgb(255, 255, 255);
+    filter: grayscale(100);
+}
+
+#cuadradoObservatoriosCuatro img{
+    max-width: 100%;
+    transform: scaleY(-1);
+  }
+
+
+
+#tituloObservatorio {
+    color:white;
+    z-index: 999;
+    grid-column: 3/5;
+    grid-row: 2 /3;
+    align-self: flex-start;
+    font-size: 3.5em;
+    padding-left: 10%;
+}
+
+#bajadaObservatorio {
+    grid-column: 3/5;
+    margin-left: 10%;
+}
+
+
+
+
+#lugarPosicionO {
+    grid-column: 1/2;
+    grid-row: 3/5;
+    z-index: 999;
+    margin-left: 4em;
+    margin-bottom: 4em;
+    align-self: center;
+    justify-self: flex-start;
+}
+
+#lugarEdicionO {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    z-index: 999;
+    align-self: center;
+    justify-self: flex-start;
+    margin-bottom: 4em;
+    margin-left: 4em;
+}
+
+
+.imagenTabla {
+    max-width: 15em;
+    max-height: 15em;
+    margin-bottom: 1em;
+    margin: auto;
+    overflow: hidden;
+    
+}
+
+.imagenTabla img{
+   
+    filter:grayscale(100%);
+    width: 100%;
+    max-width: 100%;
+
+    }
+
+table tr td p{
+    color: rgb(53, 53, 53);
+    font-family: 'IBM Plex Mono', monospace;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    line-height: 1.3em;
+}
+
+table tr td{
+    padding: 1em;
+}
+table tr td:first-of-type{
+    font-weight: 800;
+    text-align: center;
+}
+
+table tr td{
+    margin: 0;
+    border: .05em solid rgba(35, 36, 37);
+    }
+
+table tr th {
+    padding: 1em;
+}
+
+table {
+   margin: auto;
+}
+
+.acreditacionTabla tr td:last-of-type{
+   padding: 2em 3em;
+
+}
+
+.table-dark p{
+    color: white;
+    font-size: .7em;
+  margin: auto;
+  text-align: center;
+    letter-spacing: .1em;
+    border-bottom: .05em solid rgb(211, 211, 211);
+    padding-top: .5em;
+    padding-bottom: .5em;
+    margin-bottom: 2em;
+
+}
+
+.table-dark p:first-of-type{
+    font-weight: 800;
+    margin: 1em auto 0;
+    border-top: .05em solid rgb(211, 211, 211);
+    border-bottom: none;
+    padding-bottom: 0;
+
+}
+
+.table-dark {
+--bs-table-bg: #232323;
+--bs-table-striped-bg: #2b2b2b;
+--bs-table-striped-color: #fff;
+--bs-table-active-bg: #373b3e;
+--bs-table-active-color: #fff;
+--bs-table-hover-bg: #2f2f2f;
+--bs-table-hover-color: #fff;
+}
+
+/**Workshops ------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+#cuadradoWUno {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    overflow: hidden;
+    border: .08em solid rgb(255, 255, 255);
+    filter: grayscale(100);
+}
+
+#cuadradoWUno img{
+    max-width: 100%;
+
+}
+
+
+#cuadradoWDos  {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    overflow: hidden;
+    border: .08em solid rgb(255, 255, 255);
+    filter: grayscale(100);
+}
+
+#cuadradoWDos img{
+    max-width: 100%;
+ }
+
+
+#cuadradoWCuatro img{
+   max-width: 100%;
+   transform: scale(-1);
+
+ }
+
+ #cuadradoWCinco {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+    overflow: hidden;
+    border: .08em solid rgb(255, 255, 255);
+    filter: grayscale(100);
+}
+
+#cuadradoWCinco img{
+    max-width: 100%;
+ }
+ 
+
+
+
+
+/**Dialogos Astronomicos ------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#buttonAzul:not(.collapsed) {
+    background-color:  rgb(49, 77, 238); 
+    color: white;
+} 
+#buttonAzul:not(.collapsed)::after {
+background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+
+
+/**Contactanos ------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+
+.ratio {
+    width: auto;
+}
+
+button, input, optgroup, select, text {
+
+    font-size: .8em;
+}
+
+#cuadradoContactoUno {
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+    overflow: hidden;
+    border: .08em solid rgb(255, 255, 255);
+    filter: grayscale(100);
+}
+
+
+#cuadradoContactoUno img{
+    max-width: 100%;
+    height: auto;
+    filter: opacity(70%);
+}
+
+
+#cuadradoContactoDos  {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    filter: grayscale(100);
+    overflow: hidden;
+    border: .08em solid rgb(255, 255, 255); 
+}
+
+#cuadradoContactoDos  img{
+    max-width: 100%; 
+    filter: opacity(80%);
+}
+
+
+#cuadradoContactoTres {
+    grid-column: 2/ 3;
+    grid-row: 3 / 4;
+    filter: grayscale(100);
+    overflow: hidden;
+    border: .08em solid rgb(255, 255, 255);
+}
+
+
+#cuadradoContactoTres img{
+   width: 100%;
+   filter: opacity(70%);
+}
+
+
+#cuadradoContactoCuatro {
+    grid-column: 2/ 3;
+    grid-row: 4 / 5;
+    filter: grayscale(100);
+    overflow: hidden;
+    border: .08em solid rgb(255, 255, 255);
+}
+
+#cuadradoContactoCuatro img{
+    max-width: 100%;
+    filter: opacity(80%);
+ }
+ 
+
+#tituloContacto {
+    color:white;
+    z-index: 999;
+    grid-column: 3/ 5;
+    grid-row: 1 / 2;
+    font-size: 3.5em;
+    align-self: flex-end;
+    margin-left: 10%;
+}
+
+
+#formContacto {
+    grid-column: 3/ 5;
+    grid-row: 1 / 5;
+    align-self: center;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    z-index: 999;
+
+
+}
+
+#formContacto form {
+    color: white;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.514);
+    padding: 2em 2em;
+    z-index: 999;
+}
+
+fieldset{
+    border: none;
+    max-width: 100%;
+    margin: 0 auto 2.5em auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.formRecuadro, #motivo, textarea {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.63);
+    border: none;
+    border-bottom: .01em solid white;
+    padding: .7em 0;
+    width: 30%;  
+    padding-left: 1em;
+}
+
+#parteStaff {
+    width: 100%;    
+    margin-bottom: 2em;
+}
+::-webkit-input-placeholder { color: rgb(211, 211, 211);} 
+
+:-moz-placeholder { /* Firefox 18- */ color:rgb(211, 211, 211);} 
+
+::-moz-placeholder { /* Firefox 19+ */ color: rgb(211, 211, 211); } 
+
+:-ms-input-placeholder { color:rrgb(211, 211, 211); }
+
+.ratio {
+    margin: 0 1em;
+}
+
+#ratio {
+    margin-right: 2em;
+}
+
+textarea {
+    width: 63%;
+    border: none;
+}
+
+
+
+#motivo {
+    color:rgb(211, 211, 211);
+}
+
+
+
+    
+
+
+
+ 
+
+/**RESPONSIVE ------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+
+
+
+/**Tablet ----------------------------------------------------------------------------*/
+
+@media only screen and (max-width: 1200px) {
+
+/**Home ----------------------------------------------------------------------------*/
+
+ #menuMobile {
+     display: block;
+ }
+
+ #menuDesk {
+    display: none;
+ }
+
+ #homeImage {
+    grid-template-columns: repeat(2,50%);
+    grid-template-rows: repeat(4,25%);
+}
+
+#fondoHome {
+
+    grid-row: 1 / 5;
+    grid-column: 1 / 3;
+
+}
+#compraEntrada {
+    display: none;
+ }
+#homeImage h1 {
+    font-size: 2.5em;
+    grid-column: 1 / 3;
+    grid-row: 1/3;
+    z-index: 10;
+    align-self: flex-start;
+    justify-self: center;
+    margin-top: 2.3em;
+    text-align: center;
+
+
+}
+
+#lugarPosicion {
+    grid-row: 1;
+    grid-column: 2;
+    margin-left: 0;
+    margin-right: 4em;
+    margin-bottom: 4em;
+    align-self: center;
+    justify-self: flex-end;
+ }
+ 
+ #edicionPosicion{
+     grid-row: 1;
+     margin-left: 4em;
+     align-self: center;
+     justify-self: flex-start;
+     margin-bottom: 4em;
+ 
+ }
+ 
+ #imagenPresentacion {
+     grid-column: 1 / 3;
+     grid-row: 1 / 5;
+     max-width: 40%;
+      justify-self: center;
+     align-self: center;
+     overflow: hidden;
+    
+     
+ }
+
+ .datos {
+     font-size: .7em;
+     writing-mode: horizontal-tb;
+     transform: rotate(0deg);
+ }
+
+#textoPresentacion {
+    grid-column: 1 / 3;
+    grid-row: 4 / 5;
+    border-left: none;
+    align-self: flex-end;
+    width: 80%;
+    border-top: .05em solid white;
+    padding-top: .5em;
+    margin-top: 0;
+    text-align: center;
+}
+
+
+#textoPresentacion p{
+   padding-top: .7em;
+
+}
+
+
+
+section {
+    margin: 0 5%;
+
+}
+
+
+
+#gridActividadesDestacadas {
+    padding-top: 3em;
+    grid-template-columns:33% 33% 33%;
+    grid-template-rows: 15% 15% 15% 10% 15% 15% 15%;
+
+}
+
+.actividadesDestacadasUno {
+   grid-column: 1 / 3;
+   grid-row: 1 / 4;
+
+}
+
+
+.actividadesDestacadasDos {
+    grid-column: 2 / 4;
+    grid-row: 5 / 8;
+}
+
+#numeroCorteUno {
+    align-self: center;
+    justify-self: flex-end;
+    font-size: 12em;
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+    padding: 0;
+    margin: 0;
+   
+}
+
+#numeroCorteDos {
+    align-self: center;
+    justify-self: flex-end;
+    font-size: 12em;
+    grid-column: 1 / 2;
+    grid-row: 5 / 6;
+    padding: 0;
+    margin: 0;
+}
+
+#asideDos {
+    grid-column: 1 / 2;
+    grid-row: 5 / 8;
+    max-width: 100%;
+    align-self: center;
+    justify-self: center;
+}
+#asideUno {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    max-width: 100%;
+    align-self: center;
+    justify-self: center;
+}
+
+.actividadesDestacadasUno div {
+    width: 100%;
+    height: 33.3%;
+   
+}
+
+
+.actividadesDestacadasDos div {
+    width: 100%;
+    height: 33.3%;
+}
+.actividadesDestacadasDos div img {
+    width: 100%;
+    max-width: 100%;
+
+}
+
+.animacionImagenes {
+    width: 100%;
+    height: 100%;
+
+}
+.elFestivalHome {
+    padding-bottom: 7em;
+    flex-direction: column;
+}
+
+#elFestivalBajada {
+    padding-left: 0;
+    max-width: 100%;
+    margin-top: 3em;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+#imagenesFestivalContenedorDos {
+    max-width: 100%;
+    max-height: 45vh; 
+}
+
+#imagenesFestivalContenedorDos img{
+    max-width: 100%;
+}
+
+
+.contenedorGris {
+    width: 100%;
+    }
+
+.contenedorGris:nth-of-type(2) {
+        margin: 3em 0;
+    
+}
+.seccionUbicacion {
+
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    flex-wrap: wrap;
+    padding-bottom: 9em;
+    max-width: 100vw;
+}
+
+#veniEncontranos {
+width: 100%;
+margin-bottom: 3em;
+}
+
+.seccionUbicacion .masInfo {
+    max-width:26%;
+    margin: 0;
+}
+.seccionUbicacion iframe{
+    width: 68%;
+}
+
+
+/**landings ----------------------------------------------------------------------------*/
+
+.gridLandings {
+ 
+    grid-template-columns: repeat(4, 25vw);
+    grid-template-rows: repeat(5,20vh);
+}
+
+
+
+}
+
+
+
+/**RESPONSIVE ------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+
+
+
+/**Celular ----------------------------------------------------------------------------*/
+
+@media only screen and (max-width: 720px) {
+
+/**Home ----------------------------------------------------------------------------*/
+
+
+   #homeImage h1 {
+       font-size: 1.8em;  
+       grid-row: 1/3 ;
+       align-self: center;
+       margin-top: 1em;
+   }
+   
+   #lugarPosicion {
+       margin-left: 0;
+       margin-right: 2em;
+       margin-bottom: 0;
+    }
+    
+    #edicionPosicion{
+        margin-left: 2em;
+        margin-bottom: 0;
+    
+    }
+    
+    #imagenPresentacion {
+        max-width: 85%;       
+    }
+   
+    .datos {
+        font-size: .5em;
+    }
+   
+   #textoPresentacion {
+       columns: 1/2;
+       height: 100%;
+       overflow: hidden;
+       align-self: flex-start;
+       max-width: 100%;
+       margin-top: 7%;
+       padding-left: 0;
+   }
+   
+   #textoPresentacion h3{
+       font-size: 1em;
+   }
+   #textoPresentacion p{
+      padding-top: .7em;
+      font-size: .8em;
+   }
+   
+   h2 {
+       
+       font-size:1.7em;
+    }
+   
+    .subtitulos__linea {
+       width: 4em;
+   
+   }
+   
+   section {
+       margin: 0 5%;
+    
+   
+   }
+   
+   
+   #actividadesDestacadas{
+       padding-top: 2em;
+   }
+   #gridActividadesDestacadas {
+       grid-template-columns:100%;
+       grid-template-rows: 5% 40% 10% 5% 40%;
+   
+   }
+   
+   .actividadesDestacadasUno {
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+   
+   }
+   
+   
+   .actividadesDestacadasDos {
+       grid-column: 1 / 2;
+       grid-row:  5 / 6;
+   }
+   
+   #numeroCorteUno {
+       justify-self: flex-start;
+       font-size: 10em;
+       grid-column: 1 / 2;
+       grid-row: 1 / 2;      
+   }
+   
+   #numeroCorteDos {
+       font-size: 12em;
+       grid-column: 1 / 2;
+       grid-row: 4 / 5;
+   }
+   
+   #asideDos {
+      display: none;
+   }
+   #asideUno {
+    display: none;
+   }
+   
+   .actividadesDestacadasUno div {
+       width: 100%;
+       height: 100%;
+   }
+   
+   
+   .actividadesDestacadasDos div {
+       width: 100%;
+       height: 100%;
+   }
+   .actividadesDestacadasDos div img {
+       max-width: 100%;
+   }
+   
+   .elFestivalHome {
+       margin-top: 2em;
+       padding-bottom: 7em;
+       flex-direction: column;
+   }
+   
+   #elFestivalBajada {
+       padding-left: 0;
+       max-width: 100%;
+       margin-top: 1em;
+       margin-left: 5%;
+       margin-right: 5%;
+   }
+
+   #elFestivalBajada h3{
+ font-size: 1.2em;
+ width: 70%;
+}
+.lineaEstrellas{
+    max-width: 20%;
+    background-repeat: no-repeat;
+    position: center;
+   }
+
+   #elFestivalBajada #datosPie p{
+       font-size:.8em;
+       letter-spacing: .04em;
+   }
+
+ 
+
+#resumenActividadesSection {
+    padding: 3em 0;
+}
+
+   #resumenActividades {
+       padding: 0;
+       padding-bottom: 3em;
+   }
+   .contenedorGris {
+       width: 100%;
+       margin: 0;
+       padding: 0;
+       }
+   
+       .contenedorGris:nth-of-type(1) {
+        margin-top: 2em;
+    
+}
+
+   .contenedorGris:nth-of-type(2) {
+           margin: 3em 0;
+       
+   }
+   .contenedorGris h2{
+    font-size: 1.3em;
+    }
+
+    .contenedorGris h3{
+        font-size: 1em;
+        }
+
+    .contenedorGris div p:nth-child(5){
+        padding: 0 5%
+            }
+
+    .datosDos{
+        font-size:.8em;
+        }
+
+   .seccionUbicacion {
+        padding-top: 2em;
+       padding-bottom: 5em;
+  
+   }
+   
+   #veniEncontranos {
+   width: 100%;
+   margin-bottom: 2em;
+   }
+   
+   .seccionUbicacion .masInfo {
+       max-width:100%;
+       margin: 0;
+       margin-top: 2em;
+   }
+   .seccionUbicacion iframe{
+       width: 100%;
+   }
+ 
+
+   
+   
+   }
+
+
+
+   @media only screen and (max-width: 1552px) {
+
+        #asideDos {
+            grid-row: 5/7;
+            align-self: flex-end;
+        }
+
+        #asideUno {
+            grid-row: 2/4;
+            align-self: flex-end;
+        }
+
+    
+        
+
+
+}
+
+
+
+
+
+
+
+
