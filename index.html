@@ -24,20 +24,28 @@
     </head>
 <body>
     <header class="header">
-        <div class="header__logo">
-             <a href="index.html">
-                 <img src="imagenes/logoblanco-01.svg" alt="Nova">
-            </a>
-        </div>
-        <nav class="header__nav" id="menuDesk">
-            <ul class="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="festival.html">el Festival</a></li>
-                <li><a href="observatorio.html">Observatorio</a></li>
-                <li><a href="workshops.html">Workshops</a></li>
-                <li> <a href="dialogos.html">Diálogos Astronómicos</a></li>
-                <li> <a href="contacto.html">Contactanos</a></li>
-            </ul> 
+        
+        <nav class="header__nav">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="imagenes/logoblanco-01.svg" alt="Nova">
+               </a>
+           </div>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                    <ul class="menu">
+                        <li class="menu-item"><a href="index.html">Home</a></li>
+                        <li class="menu-item"><a href="festival.html">el Festival</a></li>
+                        <li class="menu-item"><a href="observatorio.html">Observatorio</a></li>
+                        <li class="menu-item"><a href="workshops.html">Workshops</a></li>
+                        <li class="menu-item"> <a href="dialogos.html">Diálogos Astronómicos</a></li>
+                        <li class="menu-item"> <a href="contacto.html">Contactanos</a></li>
+                    </ul> 
+                    <div class="mobile-bar" onClick="toggleMobileMenu();"> 
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
         </nav>
     </header>
 
@@ -358,7 +366,9 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-    
+
+
+
 
 
 </body>

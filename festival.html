@@ -18,20 +18,28 @@
     </head>
 <body>
     <header class="header">
-        <div class="header__logo">
-             <a href="index.html">
-                 <img src="imagenes/logoblanco-01.svg" alt="Nova">
-            </a>
-        </div>
-        <nav class="header__nav" id="menuDesk">
-            <ul class="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="festival.html">el Festival</a></li>
-                <li><a href="observatorio.html">Observatorio</a></li>
-                <li><a href="workshops.html">Workshops</a></li>
-                <li> <a href="dialogos.html">Diálogos Astronómicos</a></li>
-                <li> <a href="contacto.html">Contactanos</a></li>
-            </ul> 
+        
+        <nav class="header__nav">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="imagenes/logoblanco-01.svg" alt="Nova">
+               </a>
+           </div>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                    <ul class="menu">
+                        <li class="menu-item"><a href="index.html">Home</a></li>
+                        <li class="menu-item"><a href="festival.html">el Festival</a></li>
+                        <li class="menu-item"><a href="observatorio.html">Observatorio</a></li>
+                        <li class="menu-item"><a href="workshops.html">Workshops</a></li>
+                        <li class="menu-item"> <a href="dialogos.html">Diálogos Astronómicos</a></li>
+                        <li class="menu-item"> <a href="contacto.html">Contactanos</a></li>
+                    </ul> 
+                    <div class="mobile-bar" onClick="toggleMobileMenu();"> 
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
         </nav>
     </header>
 

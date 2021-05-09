@@ -158,7 +158,8 @@ h2 {
     &__titulo{
         font-size: 3.5em;
         color: white;
-        font-family: $monoespaciada;
+        font-family: $monument;
+        line-height: 1.4em;
     }
 
     &__bajada{
@@ -404,48 +405,183 @@ h2 {
     top: 0;
     left: 0;
     z-index: 9999;
-    background:rgba(35, 36, 37, 0.801);
+    background:$gris;
     width: 100vw;
     padding: 1em 0;
-    display: flex;
-    flex-direction: row;
-    justify-content:space-between;
-    align-items: center;
+    box-shadow:0 2px 5px 0 rgba(0, 0, 0, 0.2);
 
-    &__logo {
+    &__nav{
+        padding: 0;
 
-        img {
+        .logo{
+            float: left;
+            img{
             padding: 0 2em;
             height: 2.3em;
         }
-        
-      }
-
-    &__nav{
-        padding: 0 2em;
+          }
 
         .menu{
             margin: 0;
+            clear: both;
+            max-height: 0;
+            transition: max-height .2s ease-out;
+            overflow: hidden;
+            width: 100vw;
+            max-width: 100vw;
+            padding: 0;
 
+  
             li{
                 list-style: none;
-                display: inline-block;
                 position: relative;
+                padding: 0;
+                text-align: center;
+                border-top: solid rgba(255, 255, 255, 0.39) .1em;
 
                 a{
                     color: rgb(241, 241, 241);
-                    padding: 1em 1.5em;
+                    padding: 1em 3em;
+                    display: block;
+                    width: 100%;
+                    margin: auto;
+
 
                 }
-
                 a:hover{
-                    background-color: #1C5FFF;
+                    background-color:$azul;
                     color: white;
                 }
+            
+                
             }
+
+           
         }
+
+        .menu-icon {
+            cursor: pointer;
+            display: inline-block;
+            float: right;
+            padding: 1em;
+            position: relative;
+            user-select: none;
+
+            .navicon {
+                background: white;
+                display: block;
+                height: .05em;
+                position: relative;
+                transition: all .2s ease-out;
+                width: 2em;
+            }
+            .navicon:before,
+            .navicon:after {
+                background: white;
+                content: '';
+                display: block;
+                height: 100%;
+                position: absolute;
+                transition: all .2s ease-out;
+                width: 100%;
+            }
+         
+            .navicon:before {
+                    top: 5px;
+            }
+            .navicon:after {
+                    top: -5px;
+            }
+                
+        }
+
+        .menu-btn {
+                display: none;
+        }
+
+        .menu-btn:hover {
+            background-color: $azul;
+            color: white;
+            
+          }
+        
+        .menu-btn:checked ~ .menu {
+            max-height: 70vh;
+            padding-top: 1em;
+            
+          }
+        .menu-btn:checked ~ .menu-icon .navicon {
+            background: transparent;
+          }
+        .menu-btn:checked ~ .menu-icon .navicon:before {
+            transform: rotate(-45deg);
+          }
+        .menu-btn:checked ~ .menu-icon .navicon:after {
+            transform: rotate(45deg);
+          }
+        .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+        .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+            top: 0;
+          }
     }
 
+}
+
+
+/* responsive header */
+
+@media (min-width: 1200px) {
+
+    .header{
+        background:rgba(35, 36, 37, 0.801);
+        box-shadow:none;
+        padding: 0;
+      
+    &__nav{
+            padding: 0 2em;
+            width: 100vw;
+            padding: 1em 0;
+            display: flex;
+            flex-direction: row;
+            justify-content:space-between;
+            align-items: center;
+
+    .logo{
+            float: none;
+            img{
+            padding: 0 2em;
+            height: 2.3em;
+            }
+            }
+  
+    .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+      width: 100%;
+      max-width: 100%;
+      padding: 0 3em;
+      margin: 0;
+      text-align: right;
+
+      li {
+        display: inline-block;
+        list-style: none;
+        position: relative;
+        border: none;
+
+        a{
+            padding: 1em 1.5em;
+          
+        }
+      }
+    }
+   
+    .menu-icon {
+      display: none;
+    }
+  }
+}
 }
 
 
@@ -552,7 +688,7 @@ h2 {
 
 .iconosFijosSecciones {
     position: fixed;
-    top: 4.31em;
+    top: 5.5em;
     right: 0;
       z-index: 99;
       max-width: 5%;
