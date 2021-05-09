@@ -74,6 +74,9 @@ section {
   border: 0.08em solid white;
   filter: grayscale(100); }
 
+h1 {
+  font-family: 'MonumentExtended', 'Saira', sans-serif; }
+
 h2 {
   color: #232425;
   font-family: "MonumentExtended", "Saira", sans-serif;
@@ -83,20 +86,18 @@ h2 {
 */
 .subtitulos__linea {
   border-bottom: 0.2em solid #232425;
-  width: 10em;
-  padding-top: 3em; }
+  width: 10em; }
 
 .subtitulos__texto {
   color: #232425;
   font-family: "MonumentExtended", "Saira", sans-serif;
   font-weight: 300;
   margin-top: .5em;
-  font-size: 3em; }
+  font-size: 3vw; }
 
 .lineaBlanca {
   border-bottom: 0.2em solid white;
-  width: 10em;
-  padding-top: 3em; }
+  width: 10em; }
 
 /** BEM titulos landings ------------------------------------------------------------------------------------------------------------------------------------------------------
 */
@@ -109,7 +110,7 @@ h2 {
   margin: 0 15%;
   align-self: center; }
   .tituloLanding__titulo {
-    font-size: 3.5em;
+    font-size: 3.3vw;
     color: white;
     font-family: "MonumentExtended", "Saira", sans-serif;
     line-height: 1.4em; }
@@ -347,7 +348,7 @@ h2 {
 /* responsive header */
 @media (min-width: 1200px) {
   .header {
-    background: rgba(35, 36, 37, 0.801);
+    background: rgba(35, 36, 37, 0.938);
     box-shadow: none;
     padding: 0; }
     .header__nav {
@@ -385,12 +386,12 @@ h2 {
 /** BEM tabla mas info ------------------------------------------------------------------------------------------------------------------------------------------------------
 */
 .masInfo {
-  padding: .5em;
+  padding: 1em;
   border: 0.05em solid #232425;
   max-width: 80%;
   justify-self: center; }
   .masInfo ul {
-    padding: 1em .5em;
+    padding: .5em .5em 0 .5em;
     border-top: 0.05em solid #232425; }
 
 /** SASS DIALOGOS ASTRONOMICOS ------------------------------------------------------------------------------------------------------------------------------------------------------

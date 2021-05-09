@@ -109,6 +109,9 @@ section {
     color: black;
 }
 
+h1 {
+    font-family: 'MonumentExtended', 'Saira', sans-serif;
+}
 
 h2 {
     color:$gris;
@@ -122,8 +125,7 @@ h2 {
 .subtitulos{
     &__linea{
         border-bottom:.2em solid $gris;
-        width: 10em;
-        padding-top: 3em;   
+        width: 10em; 
     }
 
     &__texto{
@@ -131,7 +133,7 @@ h2 {
         font-family: $monument;
         font-weight:300;
         margin-top: .5em;
-        font-size:3em;
+        font-size:3vw;
     }
 
 }
@@ -139,7 +141,6 @@ h2 {
 .lineaBlanca{
     border-bottom:.2em solid rgb(255, 255, 255);
     width: 10em;
-    padding-top: 3em;   
 }
 
 /** BEM titulos landings ------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -156,7 +157,7 @@ h2 {
 
 
     &__titulo{
-        font-size: 3.5em;
+        font-size: 3.3vw;
         color: white;
         font-family: $monument;
         line-height: 1.4em;
@@ -533,7 +534,7 @@ h2 {
 @media (min-width: 1200px) {
 
     .header{
-        background:rgba(35, 36, 37, 0.801);
+        background:rgba(35, 36, 37, 0.938);
         box-shadow:none;
         padding: 0;
       
@@ -590,13 +591,13 @@ h2 {
 
 
 .masInfo {
-    padding: .5em;
+    padding: 1em;
     border:.05em solid rgb(35, 36, 37);
     max-width: 80%;
     justify-self: center;
 
     ul{
-        padding: 1em .5em;
+        padding: .5em .5em 0 .5em;
         border-top:.05em solid rgb(35, 36, 37);
     }
     

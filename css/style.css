@@ -9,24 +9,18 @@
 a{
     text-decoration: none;
 }
-h1 {
-    color:rgba(35, 36, 37);
-    font-family: 'MonumentExtended', 'Saira', sans-serif;
-    font-size: 1em;
-
-}
 
 h2 {
     font-size:3em;
 }
 
 h3 {
-    font-size: 1.1em;
+    font-size: 1.2vw;
     font-weight: 800;
 }
 
 .bajada {
-    padding: 0 0 0 10%;
+    padding:0;
     color: rgba(35, 36, 37);
     font-size: 1.2em;
 
@@ -63,7 +57,7 @@ h3 {
 
 #homeImage h1 {
     color: rgb(255, 255, 255);
-    font-size: 3.3em;
+    font-size: 3vw;
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: .2em;
@@ -357,6 +351,10 @@ section {
     grid-row: 2 / 4;
     align-self: flex-end;
 }
+
+#asideUno ul, #asideDos ul{
+    margin: 0;
+}
 .masInfo {
     max-width: 80%;
    }
@@ -422,7 +420,7 @@ padding: 7em 0;
 
 .elFestivalHome {
     margin: 0;
-    margin-top: 7em;
+    margin-top: 4em;
     padding:0;
     background-color:rgba(0, 0, 0, 0.705);
     display: flex;
@@ -439,20 +437,21 @@ padding: 7em 0;
     padding-left: 5em;
     color: white;
     max-width: 40%;
-    margin-top: 3em;
+    margin-top: 5em;
 }
 
 
 #imagenesFestivalContenedorDos {
     max-width: 50%;
+    height: auto;
     max-height: 100vh;
     overflow: hidden;  
     filter: grayscale(100) opacity(85%);
 }
 
 #imagenesFestivalContenedorDos img, #imagenesFestivalContenedorUno img {
-    max-height: 100%;
-    max-height: auto;
+    width: auto;
+    max-width: 100%;
     filter: grayscale(100) opacity(85%);
     
 }
@@ -462,7 +461,7 @@ padding: 7em 0;
     width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     border-top: .15em solid white;
     border-bottom: .15em solid white;
@@ -474,7 +473,6 @@ padding: 7em 0;
 #encabezadoFrase h3 {
     font-size: 1.5em;
     font-weight: 400;
-    width: 54%;
     text-align: right;
 }
 
@@ -489,7 +487,7 @@ padding: 7em 0;
     background-size: contain;
     background-repeat: repeat;
     background-position: center;
-    width: 32%;
+    width: 13%;
     height: 1.5em;
 
 }
@@ -549,7 +547,7 @@ padding: 7em 0;
 
 
 .contenedorGris h2{
-   font-size: 1.7em;
+   font-size: 1.7vw;
    text-align: center;
    border-top: .02em solid black;
    border-bottom: .02em solid black;
@@ -628,7 +626,7 @@ width: 40%;
 }
 
 .seccionUbicacion .masInfo {
-    max-width: 13%;
+    max-width: 16%;
 }
 .seccionUbicacion iframe{
     width: 40%;
@@ -636,7 +634,7 @@ width: 40%;
 }
 
 #ubicacion {
-    padding: 1em;
+    padding: .8em;
     border-top:.05em solid rgba(35, 36, 37);
     background-size: 1em;
   background-image: url("../imagenes/placeholder.svg");
@@ -851,14 +849,13 @@ width: 40%;
 
 #imagenesFestivalContenedorUno {
     max-width: 50%;
-    max-height: 95vh;
     overflow: hidden;  
 }
 
 
 #contenedorAcreditacion table{
     margin: auto;
-    width: 80%;
+    width: 100%;
 }
 
 #contenedorAcreditacion table tr td:nth-child(2){
@@ -882,6 +879,8 @@ th {
     text-transform: uppercase;
     text-align: center;
     background-color: rgb(35, 36, 37);
+    position: sticky;
+    top: 4.9em;
 }
 
 .estrellas li{
@@ -1361,6 +1360,11 @@ textarea {
 
 @media only screen and (max-width: 1200px) {
 
+h3 {
+    font-size: 1em;
+}
+
+
 /**Home ----------------------------------------------------------------------------*/
 
  #homeImage {
@@ -1451,7 +1455,7 @@ section {
 }
 
 #actividadesDestacadas {
-  padding-top:3em;
+  padding-top:7em;
   height: 250vh;
 }
 .gridDestacadas {
@@ -1533,10 +1537,16 @@ grid-row: 1/2;
     margin-right: 5%;
 }
 
+.lineaEstrellas {
+    width: 48%;
+}
 
 #imagenesFestivalContenedorDos {
     max-width: 100%;
-    
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #imagenesFestivalContenedorDos img{
@@ -1552,6 +1562,14 @@ grid-row: 1/2;
         margin: 3em 0;
     
 }
+
+.contenedorGris h2{
+    font-size: 1.7em;
+    }
+
+    .contenedorGris h3{
+        font-size: 1em;
+        }
 .seccionUbicacion {
 
     flex-direction: row;
@@ -1659,9 +1677,11 @@ margin-bottom: 3em;
    
    section {
        margin: 0 5%;
-    
-   
-   }
+    }
+
+    .subtitulos {
+        padding-top: 2em;
+    }
    
    #actividadesDestacadas {
        padding-top: 2em;
