@@ -132,7 +132,7 @@ h2 {
   flex-wrap: wrap;
   align-items: center;
   max-width: 100%;
-  z-index: 9; }
+  z-index: 998; }
   .footer__texto {
     color: #d1d1d1;
     font-size: .8em;
@@ -153,15 +153,15 @@ h2 {
     flex-direction: column;
     justify-content: center; }
   .footer__iconos {
-    padding-bottom: 2em;
     order: -1; }
     .footer__iconos img {
       max-width: 1.5em; } }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 720px) {
   .footer__texto {
     width: 80%;
-    margin-right: 0; }
+    margin-right: 0;
+    margin-top: 2em; }
   footer {
     padding-top: 3em; } }
 
@@ -213,7 +213,11 @@ h2 {
 /** BEM cartas------------------------------------------------------------------------------------------------------------------------------------------------------
 */
 .carta {
-  max-width: 30%; }
+  max-width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: auto; }
   .carta__img {
     max-width: 100%;
     max-height: 50vh;

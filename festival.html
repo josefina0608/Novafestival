@@ -12,8 +12,8 @@
     <meta name="description" content="Observá el cielo de Buenos Aires de una forma única. Conocé más sobre este Festival de Astronomía Urbana. Toda la información que neceitas saber antes de abrodar este viaje único.">
     <meta name="keywords"  content="el festival, informacion, astronomía, urbana, buenos aires, cielo urbano, fenomenos del cielo, comprender astronomia">
    
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/estilosgenerales.css">
+    <link rel="stylesheet" href="css/style.css">
 
     </head>
 <body>
@@ -102,8 +102,8 @@
 </section>
 
 <section class="elFestivalHome">
-    <div id="imagenesFestivalContenedorUno">
-        <img src="imagenes/movimiento05_01}.jpg" alt="moviemiento en avenida">
+
+    <div class="imagenFestivalContenedor" id="imagenManifiesto">
     </div>
     <div id="elFestivalBajada" >
         <div class="subtitulos">
@@ -127,6 +127,7 @@
             <h2 class="subtitulos__texto">Acreditación</h2>
          </div>
         <p class="bajada">Si sos parte del Staff de Nova, debés acreditarte para el ingreso. Te contamos qué necesitás según tu categoría. </p>
+        <div class="tableContainer">
         <table class="acreditacionTabla" data-aos="fade-up"
         data-aos-anchor-placement="center-bottom" data-aos-duration="30000">
             <tr>
@@ -192,6 +193,7 @@
                      </td>
                  </tr>
             </table>
+        </div>
      </div>
     
 </section>
@@ -217,8 +219,15 @@ new WOW().init();
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-AOS.init();
-</script>
+    AOS.init();
+    AOS.init({
+  disable: function() {
+    var maxWidth = 720;
+    return window.innerWidth < maxWidth;
+  }
+});
+
+    </script>
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>

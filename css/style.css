@@ -22,7 +22,7 @@ h3 {
 .bajada {
     padding:0;
     color: rgba(35, 36, 37);
-    font-size: 1.2em;
+    font-size: 1em;
 
 }
 
@@ -72,11 +72,6 @@ h3 {
 }
 
 
-
-
-
-
-
 #homeImage .bajada {
     color: rgb(255, 255, 255);
     font-size: 2em;
@@ -97,10 +92,8 @@ h3 {
     max-width: 100%;
     border-radius: 100%;
     border: .15em solid white;
-    
 
 }
-
 
 #textoPresentacion {
     grid-column: 2 / 3;
@@ -136,7 +129,7 @@ h3 {
     position: fixed;
     bottom: 3em;
     left: 5em;
-    z-index: 998;
+    z-index: 999;
     
  }
  #compraEntrada a{
@@ -148,7 +141,6 @@ h3 {
     margin: auto;
     padding: 3em 3.5em 3.5em 3.5em;
     line-height: 1.2em;
-
  
  }
 
@@ -156,7 +148,6 @@ h3 {
 transform:rotate(360deg) scale(1.2);
 
  }
-
 
 
 
@@ -168,12 +159,6 @@ section p{
     margin: 2em 0;
     line-height: 2em;
  }
-
-
-
-
-
-
 
 
 /** home ------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -444,7 +429,7 @@ padding: 7em 0;
 
 
 
-#imagenesFestivalContenedorDos {
+.imagenFestivalContenedor {
     background-image: url(../imagenes/movimiento03_.jpg);
     background-position: bottom;
     background-repeat: no-repeat;
@@ -455,12 +440,6 @@ padding: 7em 0;
 
 }
 
-#imagenesFestivalContenedorUno img {
-    width: auto;
-    max-width: 100%;
-    filter: grayscale(100) opacity(85%);
-    
-}
 
 #encabezadoFrase {
     display: flex;
@@ -483,7 +462,6 @@ padding: 7em 0;
 }
 
 #encabezadoFrase h3:first-child{
-    width: 10%;
     text-align: left;
     
 }
@@ -683,25 +661,8 @@ width: 40%;
 /**el Festival ------------------------------------------------------------------------------------------------------------------------------------------------------
 */
 
-.gridLandings {
-    display: grid;
-    grid-template-columns: repeat(4, 25vw);
-    grid-template-rows: repeat(4,25vh);
-    max-width: 100vw;
-    overflow: hidden;
-    box-shadow:0 16px 32px 0 rgba(0, 0, 0, 0.2);
-
-}
 
 
-
-.fondoEncabezado {
-    background-color: rgba(35, 36, 37);
-    height: 100vh;
-    width: 100vw;
-    grid-column: 1 / 5;
-    grid-row: 1 / 5;
-}
 
 #tituloLandingIzquierda {
     grid-column: 1 /3;
@@ -743,18 +704,6 @@ width: 40%;
     overflow: hidden;
     border: .08em solid rgb(255, 255, 255);
     filter: grayscale(100);
-}
-
-#tituloFestival {
-    color:white;
-    z-index: 999;
-    grid-column: 1/3;
-    grid-row: 2 / 3;
-    font-size: 3.5em;
-    justify-self: flex-start;
-    margin-left: 30%;
-    align-self: flex-end;
-    padding-bottom: 3%;
 }
 
 
@@ -853,20 +802,17 @@ width: 40%;
 }
 
 
-#imagenesFestivalContenedorUno {
-    max-width: 50%;
-    overflow: hidden;  
+#imagenManifiesto{
+    background-image: url(../imagenes/movimiento05_01}.jpg);
+    
 }
-
 
 #contenedorAcreditacion table{
     margin: auto;
     width: 100%;
 }
 
-#contenedorAcreditacion table tr td:nth-child(2){
-    width: 35%;
-}
+
 
 
 .datos a {
@@ -881,12 +827,13 @@ table {
 th {
     font-family: 'IBM Plex Mono', monospace;
     color:white;
-    font-size: 1.1em;
+    font-size: .9em;
     text-transform: uppercase;
     text-align: center;
     background-color: rgb(35, 36, 37);
     position: sticky;
     top: 4.9em;
+    z-index: 10;
 }
 
 .estrellas li{
@@ -899,8 +846,13 @@ th {
     
 }
 
+ol, ul {
+    padding: 1rem;
+}
+
 .acreditacionTabla tr td {
-    padding: 0 2em 1em 2em;
+    padding: 0 1em 1em 1em;
+    font-size: .8em;
 }
 
 
@@ -929,7 +881,7 @@ th {
 
 .iconosFijosSecciones {
   position: fixed;
-  top: 4.31em;
+  top: 5.5em;
   right: 0;
     z-index: 99;
     max-width: 5%;
@@ -938,17 +890,6 @@ th {
       max-width: 100%;
   }
   
-
-#pagesImage {
-    background-image: url(../imagenes/homebackground02.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    position: relative;
-    filter: opacity(90%);
-} 
-
 
 #cuadradoObservatoriosUno {
     grid-column: 1/2;
@@ -989,47 +930,6 @@ th {
     max-width: 100%;
     transform: scaleY(-1);
   }
-
-
-
-#tituloObservatorio {
-    color:white;
-    z-index: 999;
-    grid-column: 3/5;
-    grid-row: 2 /3;
-    align-self: flex-start;
-    font-size: 3.5em;
-    padding-left: 10%;
-}
-
-#bajadaObservatorio {
-    grid-column: 3/5;
-    margin-left: 10%;
-}
-
-
-
-
-#lugarPosicionO {
-    grid-column: 1/2;
-    grid-row: 3/5;
-    z-index: 999;
-    margin-left: 4em;
-    margin-bottom: 4em;
-    align-self: center;
-    justify-self: flex-start;
-}
-
-#lugarEdicionO {
-    grid-column: 1/2;
-    grid-row: 2/3;
-    z-index: 999;
-    align-self: center;
-    justify-self: flex-start;
-    margin-bottom: 4em;
-    margin-left: 4em;
-}
-
 
 .imagenTabla {
     max-width: 15em;
@@ -1079,7 +979,7 @@ table {
 }
 
 .acreditacionTabla tr td:last-of-type{
-   padding: 2em 3em;
+   padding: 1em 1em;
 
 }
 
@@ -1161,6 +1061,11 @@ table {
 #cuadradoWCinco img{
     max-width: 100%;
  }
+
+ .DADestacados .carta .carta__texto{
+     height: 15%;
+
+ }
  
 
 
@@ -1168,21 +1073,6 @@ table {
 
 /**Dialogos Astronomicos ------------------------------------------------------------------------------------------------------------------------------------------------------
 */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 #buttonAzul:not(.collapsed) {
@@ -1193,6 +1083,10 @@ table {
 background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
 
+#buttonAzul:focus{
+    border-color:rgb(49, 77, 238);
+    box-shadow: 0 0 0 0.25rem rgb(49, 77, 238, 0.377);
+}
 
 
 /**Contactanos ------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -1370,8 +1264,14 @@ h3 {
     font-size: 1em;
 }
 
+p, a {
+    font-size: .9em;
+}
+
 
 /**Home ----------------------------------------------------------------------------*/
+
+/**landing ----------------------------------------------------------------------------*/
 
  #homeImage {
     grid-template-columns: repeat(2,50%);
@@ -1385,8 +1285,11 @@ h3 {
 
 }
 #compraEntrada {
-    display: none;
+    font-size: .8em; 
+    bottom: 3em;
+    left: 2em; 
  }
+
 #homeImage h1 {
     font-size: 2.5em;
     grid-column: 1 / 3;
@@ -1394,7 +1297,7 @@ h3 {
     z-index: 10;
     align-self: flex-start;
     justify-self: center;
-    margin-top: 2.3em;
+    margin-top: 4em;
     text-align: center;
 
 
@@ -1410,7 +1313,7 @@ h3 {
     justify-self: flex-end;
  }
  
- #edicionPosicion{
+ #edicionPosicion {
      grid-row: 1;
      margin-left: 4em;
      align-self: center;
@@ -1422,8 +1325,8 @@ h3 {
  #imagenPresentacion {
      grid-column: 1 / 3;
      grid-row: 1 / 5;
-     max-width: 40%;
-      justify-self: center;
+     max-width: 60%;
+     justify-self: center;
      align-self: center;
      overflow: hidden;
     
@@ -1454,23 +1357,30 @@ h3 {
 
 }
 
+#compraEntrada {
+    z-index: 997;
+}
 
+/**home ----------------------------------------------------------------------------*/
 
 section {
     margin: 0 5%;
+    padding-top: 4em;
+    padding-bottom: 2em;
 }
 
+.subtitulos__texto{
+    font-size: 4vw;
+}
 #actividadesDestacadas {
-  padding-top:7em;
-  height: 250vh;
+  padding-top:4em;
+  height: 149vh;
 }
 .gridDestacadas {
    padding-top: 3em;
    grid-template-columns: 70% 30%;
-   grid-template-rows: 100vh 10vh 100vh;
+   grid-template-rows: 60vh 5vh 60vh;
 }
-
-
 
 .contenedorDestacadas {
 grid-column: 1/2;
@@ -1484,7 +1394,7 @@ grid-row: 1/2;
 
 .flip-card {
    width: 100%;
-   height: 32vh;
+   height: 33%;
    overflow: hidden;
 
   }
@@ -1514,12 +1424,7 @@ grid-row: 1/2;
   .datosActividad p{
     font-size: .7em;
     padding: 0;
-  
-
   }
-
-
-
 
 #numeroCorteUno {
     display: none;
@@ -1531,48 +1436,66 @@ grid-row: 1/2;
 }
 
 .elFestivalHome {
-    padding-bottom: 2em;
+    padding-top: 2em;
     flex-direction: column;
+    margin-top: 0;
 }
 
 #elFestivalBajada {
     padding-left: 0;
     max-width: 100%;
-    margin-top: 3em;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin: 3em 5%;
 }
 
 .lineaEstrellas {
-    width: 48%;
+    width: 20%;
 }
 
-#imagenesFestivalContenedorDos {
+.imagenFestivalContenedor {
     width: 100%;
-    height: 40vh;
+    height: 20vh;
     background-position: bottom;
+    order: 2;
 }
 
 
+#resumenActividadesSection{
+    padding: 5em 0 1em 0;
+}
 
+#resumenActividades {
+    padding: 2em 5%;
+    justify-content: space-around;
+}
 .contenedorGris {
-    width: 100%;
+    width: 48%;
     }
 
-.contenedorGris:nth-of-type(2) {
+.contenedorGris:nth-of-type(3) {
         margin: 3em 0;
-    
+}
+
+.contenedorGris div p {
+    padding: 1em 2em;
 }
 
 .contenedorGris h2{
-    font-size: 1.7em;
+    font-size: 1.2em;
     }
 
-    .contenedorGris h3{
-        font-size: 1em;
+.contenedorGris h3{
+     font-size: 1em;
         }
+.contenedorData {
+    max-height: 3em;
+}
+.contenedorGris div img {
+    height: 3em;
+}
+#resumenActividadesSection #actividadesHome, #resumenActividadesSection .subtitulos {
+    margin-left: 5%;
+}
 .seccionUbicacion {
-
     flex-direction: row;
     justify-content: space-between;
     align-items:center;
@@ -1595,23 +1518,403 @@ margin-bottom: 3em;
 }
 
 
+/**landings general----------------------------------------------------------------------------*/
+
+#pagesImage .gridLandings {
+    grid-template-rows: 25vh 25vh 25vh;
+    height: 75vh;
+}
+
+#pagesImage {
+    height: 75vh;
+}
+#pagesImage .gridLandings img {
+    width: auto;
+    max-width: 150%;
+}
+
+#pagesImage .gridLandings #lugarPosicionO {
+    grid-row: 1;
+    grid-column: 3/5;
+    margin-left: 0;
+    margin-right: 4em;
+    margin-bottom: 0;
+    align-self: flex-start;
+    justify-self: flex-end;
+    margin-top: 25%;
+ }
+ 
+ #pagesImage .gridLandings  #lugarEdicionO{
+     grid-row: 1;
+     margin-left: 4em;
+     align-self: flex-start;
+     justify-self: flex-start;
+     margin-bottom: 0;
+     margin-top:50%;
+ 
+ }
+ #pagesImage .gridLandings  #festivalPosicion{
+    grid-column: 3/5;
+    grid-row: 3/4;
+    margin-right: 3em;
+    z-index: 99;
+ }
+
+.tituloLanding{
+   grid-column: 1/5;
+   grid-row: 1/3;
+   align-self: flex-start;
+   margin: 0 15%;
+   margin-top: 25%;
+ 
+}
+
+#tituloLandingIzquierda{
+    grid-column: 1/5;
+    grid-row: 1/3;
+    align-self: flex-start;
+   margin: 0 15%;
+   margin-top: 25%;
+ }
+ .tituloLanding__titulo {
+     font-size: 5vw;
+ }
+ .tituloLanding__bajada{
+     margin-top: 2em;
+ }
+
+
+/**el festival----------------------------------------------------------------------------*/
+
+#cuadradoFestivalUno {
+    grid-column: 1/ 3;
+    grid-row: 3 / 4;
+}
+#cuadradoFestivalUno img{
+    max-width: 100%; 
+}
+
+#cuadradoFestivalDos {
+  display: none;
+}
+
+#cuadradoFestivalTres img, #cuadradoFestivalCuatro img{
+   height: 100%;
+}
+
+#cuadradoFestivalCuatro {
+    grid-column: 4 /5;
+    grid-row: 3 / 4;
+}
+
+
+#seccionUnoFestival {
+    grid-template-columns: 5% repeat(3, 30%) 5%;
+    grid-template-rows: 15% repeat(2, 41.5%);
+    margin-bottom: 2em;
+
+}
+
+#tituloSeccionUnoFestival {
+    grid-column: 2/5;
+}
+
+.destacada {
+    font-size: 4rem;
+}
+
+
+#tituloMovimientoUno {
+    max-width: 800%;
+}
+table tr th {
+    top: 0;
+}
+
+.tableContainer {
+    max-width: 100%;
+    overflow: scroll;
+}
+.tableContainer th:nth-of-type(2){
+    padding:0 5%;
+
+}
+.tableContainer th:nth-of-type(4){
+    padding:0 10%;
+
+}
+
+/**observatorio----------------------------------------------------------------------------*/
+
+.iconosFijosSecciones {
+    position: fixed;
+    top: 4em;
+    right: 0;
+      z-index: 99;
+      max-width: 10%;
+  }
+  .iconosFijosSecciones img{
+        max-width: 100%;
+    }
+    
+  
+  
+  #cuadradoObservatoriosUno {
+      grid-column: 1/2;
+      grid-row: 3/ 4;
+      overflow: hidden;
+      border: .08em solid rgb(255, 255, 255);
+      filter: grayscale(100);
+  }
+  
+  
+  
+  
+  #cuadradoObservatoriosDos {
+      grid-column: 2/3;
+      grid-row: 3 / 4;
+      width: 100%;
+      height: 50%;
+      align-self: flex-end;
+  }
+  
+  
+  #cuadradoObservatoriosCuatro {
+      grid-column: 3/4;
+      grid-row: 3/ 4;
+      width: 100%;
+      height: 50%;
+  }
+
+
+  table tr td:first-of-type{
+      font-weight: 800;
+      text-align: center;
+      font-size: .8em;
+  }
+  
+
+  .table-dark p{
+      font-size: .6em;
+  }
+  
+  .table-dark p:first-of-type{
+      font-weight: 800;
+      font-size: .8em;
+  
+  }
+
+/**workshop ----------------------------------------------------------------------------*/
+
+  #cuadradoWUno {
+      grid-column: 1/2;
+    grid-row: 3 / 4;
+    width: 100%;
+    height: 50%;
+    align-self: flex-end;
+  
+}
+
+#cuadradoWDos  {
+    grid-column: 3/4;
+    grid-row: 3 / 4;
+}
+
+
+ #cuadradoWCinco {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    width: 100%;
+    height: 50%;
+   
+}
+
+
+/**dialogos ----------------------------------------------------------------------------*/
+
+#pagesImage .gridLandings #cuadradoDAUno {
+    grid-column: 4/5;
+    grid-row: 3/4;
+    height: 80%;
+    align-self: flex-end;
+}
+
+#pagesImage .gridLandings #cuadradoDADos  {
+    grid-column: 1 /2;
+    grid-row: 3/4;
+    height: 80%;
+    align-self: flex-end;
+}
+
+#pagesImage .gridLandings #cuadradoDATres {
+    grid-column:  2/3;
+    grid-row: 3/4;
+    height: 80%;
+    align-self: flex-end;
+ }
+
+.carta{
+    width: 31%;
+    max-width: 31%;
+    justify-content: space-evenly;
+}
+.carta__img{
+    height: 27vh;
+ }
+
+ .carta__titulo{
+    font-size: .9em;
+ }
+
+ .carta__texto{
+    font-size: .8em;
+ }
+
+ .carta__datos{
+    font-size: .7em;
+ }
+ 
+.carta .estrella {
+    height: 1em;
+}
+.todasActividades #accordionExample .accordion-collapse .accordion-body {
+    font-size: .9em;
+}
+.accordion-button, .accordion-button:not(.collapsed) {
+    font-size: 1rem;
+}
+
+/**Contacto ----------------------------------------------------------------------------*/
+
+#cuadradoContactoUno {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    display: none;
+}
+
+#cuadradoContactoDos  {
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+    display: none;
+}
+
+
+#cuadradoContactoTres {
+    grid-column: 2/ 3;
+    grid-row: 3 / 4;
+    display: none;
+}
+
+#cuadradoContactoCuatro {
+    grid-column: 2/ 3;
+    grid-row: 4 / 5;
+    display: none;
+}
+
+
+#tituloContacto {
+    grid-column: 1/ 5;
+    grid-row: 1 / 2;
+    font-size: 5vw;
+    align-self: flex-start;
+    margin-top: 20%;
+    z-index: 100;
+}
+
+
+#formContacto {
+    grid-column: 1/ 5;
+    grid-row: 1 / 4;
+    z-index: 9;
+
+
+}
+
+#formContacto form {
+    padding: 2em 2em;
+    z-index: 9;
+    background-color: rgba(14, 14, 14, 0.98);
+}
+.botonesForm__boton{
+    margin-top: 2em;
+}
+
+
+}
+
+
+
+
+/**Tablet horizontal ----------------------------------------------------------------------------*/
+
+@media only screen and (min-width: 1000px) and (max-width: 1200px){
+    #imagenPresentacion {
+        max-width: 40%;
+        
+    }
+
+    #homeImage h1 {
+        margin-top: 3em;
+    }
+
+    #actividadesDestacadas {
+        height: 180vh;
+      }
+      .gridDestacadas {
+         padding-top: 3em;
+         grid-template-rows: 70vh 5vh 70vh;
+      }
 /**landings ----------------------------------------------------------------------------*/
 
-.gridLandings {
- 
-    grid-template-columns: repeat(4, 25vw);
-    grid-template-rows: repeat(5,20vh);
+      #pagesImage .gridLandings {
+        grid-template-rows: 33vh 33vh 34vh;
+        height: 100vh;
+    }
+    
+    #pagesImage {
+        height: 100vh;
+    }
+
+    .tituloLanding{
+        margin-top: 15%;
+     }
+     
+     #tituloLandingIzquierda{
+        margin-top: 15%;
+      }
+      #pagesImage .gridLandings #lugarPosicionO {
+        margin-top: 20%;
+     }
+     
+     #pagesImage .gridLandings  #lugarEdicionO{
+         margin-top: 40%;
+     
+     }
+
+     #tituloContacto {
+        margin-top: 13%;
+    }
+
+    .iconosFijosSecciones {
+        max-width: 8%;
+        top: 4em;
+    }
+
+
+    #elFestivalBajada {
+        margin-bottom: 2em;
+    }
+
+    .imagenFestivalContenedor {
+        height: 40vh;
+    }
+
+
+    .tableContainer th:nth-of-type(4){
+        padding:0 20%;
+    
+    }
 }
-
-
-
-}
-
-
-
-/**RESPONSIVE ------------------------------------------------------------------------------------------------------------------------------------------------------
-*/
-
 
 
 /**Celular ----------------------------------------------------------------------------*/
@@ -1622,7 +1925,7 @@ margin-bottom: 3em;
 
 
    #homeImage h1 {
-       font-size: 1.8em;  
+       font-size: 7vw;  
        grid-row: 1/3 ;
        align-self: center;
        margin-top: 1em;
@@ -1668,7 +1971,7 @@ margin-bottom: 3em;
    
   .subtitulos__texto {
        
-       font-size:1.8em;
+       font-size:7.5vw;
     }
    
     .subtitulos__linea {
@@ -1678,6 +1981,7 @@ margin-bottom: 3em;
    
    section {
        margin: 0 5%;
+       padding-top: 3em;
     }
 
     .subtitulos {
@@ -1686,62 +1990,62 @@ margin-bottom: 3em;
    
    #actividadesDestacadas {
        padding-top: 2em;
-       height: 280vh;
+       height: auto;
    }
 
    .gridDestacadas {
-    padding-top: 3em;
-    grid-template-columns: 100%;
-    grid-template-rows: 20vh 100vh 5vh 20vh 100vh;
+    padding-top: 1em;
+    display: flex;
+    flex-direction: column;
+    height: auto;
  }
  
  
  
  .contenedorDestacadas {
- grid-column: 1/2;
- grid-row: 2/3;
+ order: 2;
  }
  
- .contenedorDestacadasDos {
-     grid-column: 1/2;
-     grid-row: 5/6;
- }
+ 
  #asideDos {
-    grid-column: 1/2;
-    grid-row: 4/5;
- 
-    align-self: flex-start;
     width: 100%;
     max-width: 100%;
     font-size: .9em;
+    margin: 0;
+    margin-top: 2em;
+    margin-bottom: 1em;
 
 }
 #listaWrap li{
    display: inline-block;
-   width: 45%;
+   width: 49%;
 }
 
 #listaWrap{
     padding-bottom: 0;
  }
+ .estrellas li {
+     background-position-y: top;
+     font-size: .9em;
+ }
+ .masInfo ul {
+padding: 1em 0 0 0;
+}
 
 #asideUno {
-    grid-column: 1/2;
-    grid-row: 1/2;
-    align-self: flex-start;
     width: 100%;
     max-width: 100%;
     font-size: .9em;
     margin: 0;
-  
+    margin-bottom: 1em;
 
 }
 
  .flip-card {
     width: 100%;
-    height: 32vh;
+    height: 34vh;
     overflow: hidden;
- 
+    margin: .5em 0;
    }
  
    .flip-card-front{
@@ -1752,7 +2056,8 @@ margin-bottom: 3em;
  
  
    .flip-card-back {
-     padding: 2rem 2rem;
+     padding: 1em 1em;
+     font-size: .9em;
    }
  
  
@@ -1822,13 +2127,16 @@ margin-bottom: 3em;
        }
    
        .contenedorGris:nth-of-type(1) {
-        margin-top: 2em;
-    
+        margin-top: 2em;  
 }
 
    .contenedorGris:nth-of-type(2) {
            margin: 3em 0;
        
+   }
+
+   .contenedorGris:nth-of-type(3){
+    margin: 0;  
    }
    .contenedorGris h2{
     font-size: 1.3em;
@@ -1866,10 +2174,388 @@ margin-bottom: 3em;
        width: 100%;
    }
  
+/**landings general----------------------------------------------------------------------------*/
 
-   
-   
+#pagesImage .gridLandings {
+    height: auto;
+    grid-template-rows: repeat(3, auto);
+}
+
+#pagesImage {
+    height: auto;
+    max-height: auto;
+}
+
+#pagesImage .gridLandings #fondoHome {
+    height: auto;
+}
+
+
+ #pagesImage .gridLandings  #festivalPosicion{
+    grid-column: 1/5;
+    height: auto;
+    max-height: auto;
+ }
+
+#tituloLandingIzquierda{
+    margin: 0 auto;
+    margin-top: 40%;
+    width: 85%;
+ }
+ .tituloLanding{
+     margin: 0 auto;
+     margin-top: 40%;
+    width: 85%;
+ }
+
+ .tituloLanding__titulo {
+     font-size: 8vw;
+ }
+ .tituloLanding__bajada{
+     margin-top: 1em;
+     padding-top: 1em;
+     font-size: 1.1em;
+ }
+
+ #pagesImage .gridLandings #lugarPosicionO {
+    margin-top: 50%;
+ }
+ 
+ #pagesImage .gridLandings  #lugarEdicionO{
+     margin-top: 100%;
+ 
+ }
+ #pagesImage .gridLandings #festivalPosicion{
+ font-size: .5em;
+}
+/**el festival----------------------------------------------------------------------------*/
+
+#cuadradoFestivalUno {
+    display: none;
+}
+
+#cuadradoFestivalDos {
+  display: none;
+}
+
+#cuadradoFestivalCuatro {
+    display: none;
+}
+
+#seccionUnoFestival {
+    grid-template-columns: repeat(3, 33.3%);
+    grid-template-rows: 20vh repeat(2, 25vh);
+    row-gap: 2%;
+    padding-top: 5rem;
+
+}
+.subtitulos__texto {
+    margin-right:5%;
+}
+
+#tituloSeccionUnoFestival {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    margin-left: 5%;
+    padding:0;
+}
+
+
+.destacada {
+    font-size: 2rem;
+}
+
+
+#tituloMovimientoUno {
+    grid-column: 1/4;
+    max-width: 600%;
+}
+
+#supernova {
+    grid-column:2/3;
+    max-width: 100%;
+}
+
+#secretos {
+    grid-column:1/2;
+
+}
+
+
+#tituloMovimientoDos {
+    grid-column: 1/4;
+    grid-row: 3/4;
+    max-width: 600%;
+}
+
+#rayos {
+    grid-column:3/4;
+    max-width: 100%;
+}
+
+
+#rayosTitulo {
+    grid-column: 1/3;
+}
+
+#seccionAcreditacion{
+    padding-top: 3em;
+}
+
+   .tableContainer{
+        max-width: 100%;
+        height: auto;
+        overflow: scroll;
+
+    }
+
+    .tableContainer th{
+        position: none;
+        top:0;
+
+    }
+
+    dl, ol, ul {
+      margin-bottom: 0;
+
+  }
+    .tableContainer th:nth-of-type(2){
+        padding:0 10%;
+
+    }
+    .tableContainer th:nth-of-type(4){
+        padding:0 10%;
+
+    }
+
+
+    #elFestivalBajada h3 {
+        font-size: 1em;
+    }
+    
+/**observatorio----------------------------------------------------------------------------*/
+
+.iconosFijosSecciones {
+    position: fixed;
+    top: 4em;
+    right: 0;
+      z-index: 99;
+      max-width: 15%;
+  }
+  .iconosFijosSecciones img{
+        max-width: 100%;
+    }
+    
+    .bajada {
+        font-size: .9em;
+        line-height: 1.7em;
+    }
+  
+  #cuadradoObservatoriosUno {
+      display: none;
+  }
+  
+  
+  #cuadradoObservatoriosDos {
+    display: none;
+  }
+  
+  
+  #cuadradoObservatoriosCuatro {
+    display: none;
+  }
+
+
+  table tr td:first-of-type{
+      font-size: .8em;
+  }
+  
+
+  .table-dark p{
+      font-size: .6em;
+  }
+  
+  .table-dark p:first-of-type{
+      font-weight: 800;
+      font-size: .8em;
+  }
+
+
+  #tablaObservatorio th{
+   padding: 1em 0;
+
+  }
+  #tablaObservatorio th:first-child{
+    padding: 1em 0;
    }
+
+  #tablaObservatorio {
+      height: auto;
+  }
+  
+.imagenTabla {
+    width: 10em;
+    height: 10em;
+    
+}
+
+#tablaObservatorio p{
+  
+    line-height: 1em;
+    font-size: .6em;
+}
+
+
+/**dialogos----------------------------------------------------------------------------*/
+
+#pagesImage .gridLandings #cuadradoDAUno {
+    display: none;
+}
+
+#pagesImage .gridLandings #cuadradoDADos  {
+    display: none;
+}
+
+#pagesImage .gridLandings #cuadradoDATres {
+  display: none;
+ }
+
+ #destacadas .DADestacados {
+        flex-direction: column;
+        max-width: 100%;
+        justify-content: space-between;
+        margin-top: 1em;
+    }
+
+ .carta{
+     width: 100%;
+     max-width: 100%;
+ }
+
+ .carta:nth-of-type(2){
+    margin: 3em 0;
+}
+
+
+.carta__img{
+    height: 18vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ }
+
+ .todasActividades{
+   padding-top: 2em;
+ }
+
+/**workshop ----------------------------------------------------------------------------*/
+
+#cuadradoWUno {
+  display: none;
+
+}
+
+#cuadradoWDos  {
+    display: none;
+}
+
+
+#cuadradoWCinco {
+  display: none;
+ 
+}
+
+
+/**Contacto ----------------------------------------------------------------------------*/
+#pagesImage #contactoLanding, #pagesImage #contactoLanding #fondoHome  {
+height: 100vh;
+}
+
+
+#cuadradoContactoUno {
+  display: none;
+}
+
+#cuadradoContactoDos  {
+    display: none;
+}
+
+
+#cuadradoContactoTres {
+    display: none;
+}
+
+#cuadradoContactoCuatro {
+    display: none;
+}
+
+#pagesImage  #contactoLanding #festivalPosicion{
+    margin: 0;
+    margin-bottom: 2em;
+    margin-right: 3em;
+    grid-row: 5/6;
+}
+
+#tituloContacto {
+    font-size: 8vw;
+    align-self: flex-start;
+    margin: 0 auto;
+    margin-top: 35%;
+}
+
+#formContacto {
+    margin: 0 5%;
+   align-self: flex-end;
+   margin-bottom: 1.5em;
+   grid-row: 1/6;
+
+}
+
+#formContacto form {
+    padding: 1em 1em;
+    font-size: .8em;
+}
+
+fieldset {
+    font-size: .9em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin:0 auto 1.5em auto;
+}
+#formContacto  #parteStaff {
+    font-size: 1.2em;
+    margin-bottom: 0;
+}
+#formContacto  label {
+    font-size: 1em;
+}
+#ratio {
+    margin-right: 1em;
+    
+}
+.formRecuadro, #motivo, textarea {
+    width: 100%;
+    font-size: .9em;
+    margin: .5em 0;
+}
+
+
+.botonesForm__boton{
+   padding: auto 2em;
+    margin-top: 2em;
+}
+
+.botonesForm{
+    text-align: center;
+}
+.ratio{
+    margin: 0 .5em;
+}
+
+}
+   
 
 
 
@@ -1899,3 +2585,8 @@ margin-bottom: 3em;
 }
 
 
+@media screen and (max-width: 480px) {
+    [data-aos-delay] {
+      transition-delay: 0s !important;
+    }
+  }

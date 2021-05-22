@@ -14,8 +14,8 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="fuentes/MonumentExtended-Regular.ttf" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/estilosgenerales.css">
+    <link rel="stylesheet" href="css/style.css">
 
     </head>
 <body>
@@ -83,8 +83,8 @@
             <div class="subtitulos__linea"></div>
             <h2 class="subtitulos__texto">Destacados</h2>
          </div>
-            <div class="DADestacados" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="30000">
-                <div class="carta">
+            <div class="DADestacados">
+                <div class="carta" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="30000">
                     <div class="carta__img animacionImagenes">
                          <img src="imagenes/observacion03.jpg" alt="La gravedad en Marte">
                     </div>
@@ -97,7 +97,7 @@
                         <p>W.01</p>
                     </div>
                 </div>
-                <div class="carta">
+                <div class="carta" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="30000">
                     <div class="carta__img animacionImagenes">
                          <img src="imagenes/actividades02.jpg" alt="Caminata Espacial">
                     </div>
@@ -110,7 +110,7 @@
                         <p>W.02</p>
                     </div>
                 </div>
-                <div class="carta">
+                <div class="carta"  data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="30000">
                     <div class="carta__img animacionImagenes">
                          <img src="imagenes/actividades08.jpg" alt="Simulador NASA">
                     </div>
@@ -199,8 +199,15 @@
     
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-    AOS.init();
-    </script>
+        AOS.init();
+        AOS.init({
+      disable: function() {
+        var maxWidth = 720;
+        return window.innerWidth < maxWidth;
+      }
+    });
+    
+        </script>
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
 <script rc="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>

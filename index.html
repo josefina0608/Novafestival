@@ -237,7 +237,7 @@
     
 </section>
     <section class="elFestivalHome">
-        <div id="imagenesFestivalContenedorDos">
+        <div class="imagenFestivalContenedor">
         </div>
         <div id="elFestivalBajada">
             <div class="subtitulos">
@@ -269,8 +269,8 @@
             <h2 class="subtitulos__texto">Actividades</h2>
          </div>
     
-         <div id="resumenActividades" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="30000">
-            <div class="contenedorGris">
+         <div id="resumenActividades">
+            <div class="contenedorGris" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="30000">
                 <div>
                     <div class="contenedorData">
                         <p class="datosDos">Z.1-Z.3</p>
@@ -285,7 +285,7 @@
                     <a href="dialogos.html" class="botones__texto" id="rojo">Ver más</a>
                </div>
             </div>
-            <div class="contenedorGris">
+            <div class="contenedorGris" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="30000">
                 <div>
                 <div class="contenedorData">
                         <p class="datosDos">Z.1-Z.8</p>
@@ -301,7 +301,7 @@
                 <a href="dialogos.html" class="botones__texto" id="azul">Ver más</a>
            </div>
             </div>
-            <div class="contenedorGris">
+            <div class="contenedorGris" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="30000">
                 <div>
                         <div class="contenedorData">
                             <p class="datosDos">Z.8-Z.12</p>
@@ -360,6 +360,13 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
     AOS.init();
+    AOS.init({
+  disable: function() {
+    var maxWidth = 720;
+    return window.innerWidth < maxWidth;
+  }
+});
+
     </script>
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>

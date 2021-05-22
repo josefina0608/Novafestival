@@ -13,9 +13,8 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="fuentes/MonumentExtended-Regular.ttf" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/estilosgenerales.css">
-
+    <link rel="stylesheet" href="css/style.css">
     <header class="header">
         
         <nav class="header__nav">
@@ -49,7 +48,7 @@
 
             <div class="tituloLanding">
                 <h1  class="animate__animated animate__fadeInUp tituloLanding__titulo" id="tituloW">Diálogos<br>Astronómicos</h1>
-                <p class="tituloLanding__bajada animate__animated animate__fadeInUp" id="bajadaWorkshop">Estarán a cargo de astrónomos y fotógrafos referidos al tema, tanto nacionales como internacionales. Un espacio intelectual donde se pueda explicar con calma, en un ida y vuelta continuo, temas de intereses comunes como ciertos mitos o fenómenos. Como nos influye por ejemplo la luna y la marea.</p>
+                <p class="tituloLanding__bajada animate__animated animate__fadeInUp" id="bajadaWorkshop">Estarán a cargo de astrónomos y fotógrafos referidos al tema, tanto nacionales como internacionales. Un espacio intelectual donde se pueda explicar con calma, en un ida y vuelta continuo, temas de intereses comunes como ciertos mitos o fenómenos.</p>
            </div>
 
             <p class="datos"id="lugarPosicionO">Planetario de Buenos Aires</p>
@@ -83,8 +82,8 @@
             <div class="subtitulos__linea"></div>
             <h2 class="subtitulos__texto">Destacados</h2>
          </div>
-        <div class="DADestacados" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="30000">
-           <div class="carta">
+        <div class="DADestacados">
+           <div class="carta"  data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="30000">
                 <div class="carta__img animacionImagenes">
                     <img src="imagenes/movimiento05_04_vertical.jpg" alt="La velocidad de la Luz">
                 </div>
@@ -97,7 +96,7 @@
                     <p>D.01</p>
                 </div>
             </div>
-            <div class="carta">
+            <div class="carta"  data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="30000">
                 <div class="carta__img animacionImagenes">
                      <img src="imagenes/observacion10.jpg" alt="Robot M16">
                 </div>
@@ -110,12 +109,12 @@
                     <p>D.02</p>
                 </div>
             </div>
-            <div class="carta">
+            <div class="carta"  data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="30000">
                 <div class="carta__img animacionImagenes">
                      <img src="imagenes/movimiento04.jpg" alt="Viaje al espacio">
                 </div>
                 <h3 class="carta__titulo">Viaje al espacio</h3>
-                <div class="carta__separador"></div>
+                <div class="carta__separador estrella"></div>
                 <p class="carta__texto">Nuestros expertos te cuentan cómo es orbitar pensándolo desde lo urbano</p>
                 <div class="carta__datos">
                     <p><b>Zona:</b> 05</p>
@@ -199,8 +198,15 @@
     
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-    AOS.init();
-    </script>
+        AOS.init();
+        AOS.init({
+      disable: function() {
+        var maxWidth = 720;
+        return window.innerWidth < maxWidth;
+      }
+    });
+    
+        </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
     <script rc="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
