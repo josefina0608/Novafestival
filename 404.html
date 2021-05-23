@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nova | Festival de Astronomía Urbana</title>
+    <link href="fuentes/MonumentExtended-Regular.ttf" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Saira:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/estilosgenerales.css">    
+<link rel="stylesheet" href="css/style.css">
+   
+
+    </head>
+<body>
+    <header class="header">
+        
+        <nav class="header__nav">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="imagenes/logoblanco-01.svg" alt="Nova">
+               </a>
+           </div>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                    <ul class="menu">
+                        <li class="menu-item"><a href="index.html">Home</a></li>
+                        <li class="menu-item"><a href="festival.html">el Festival</a></li>
+                        <li class="menu-item"><a href="observatorio.html">Observatorio</a></li>
+                        <li class="menu-item"><a href="workshops.html">Workshops</a></li>
+                        <li class="menu-item"> <a href="dialogos.html">Diálogos Astronómicos</a></li>
+                        <li class="menu-item"> <a href="contacto.html">Contactanos</a></li>
+                    </ul> 
+                    <div class="mobile-bar" onClick="toggleMobileMenu();"> 
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+        </nav>
+    </header>
+
+
+    <div id="pagesImage">
+        <div class="gridLandings" id="error">
+            <div id="fondoHome"></div>
+            <div class="tituloLanding" id="notFound">
+                <h1  class="animate__animated animate__fadeInUp tituloLanding__titulo">¡Oops!</h1>
+                <p class="tituloLanding__bajada animate__animated animate__fadeInUp">Todavía estamos trabajando en ello. ¡Pronto estaremos listos para despegar!
+                    <a href="index.html">Volver al inicio</a>
+                </p>
+           </div>
+        
+            <p class="datos"id="lugarPosicionO">Planetario de Buenos Aires</p>
+            <p class="datos" id="lugarEdicionO">Edición II</p>
+            <p id="festivalPosicion">Festival de Astronomía Urbana</p>
+        </div>
+    </div>
+    <footer class="footer">
+        <p class="footer__texto">Festival de Astronomía Urbana, Planetario de Buenos Aires</p>
+        <div class="footer__iconos">
+            <a href="404.html"><img src="imagenes/instagram.svg" alt="Instagram"></a>
+            <a href="404.html"><img src="imagenes/facebook.svg" alt="Facebool"></a>
+            <a href="404.html"> <img src="imagenes/envelope.svg" alt="Mail"></a>
+        </div>
+
+    </footer>
+
+    <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    AOS.init({
+  disable: function() {
+    var maxWidth = 720;
+    return window.innerWidth < maxWidth;
+  }
+});
+
+    </script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+
+
+
+
+</body>
+</html>
