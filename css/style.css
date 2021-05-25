@@ -717,7 +717,6 @@ width: 40%;
     overflow: hidden;
     grid-template-columns: 10% repeat(3, 26.6%) 10%;
     grid-template-rows: 16em repeat(2, 35em);
-    grid-row-gap: 2%;
     position: relative;
 
 }
@@ -1654,9 +1653,6 @@ margin-bottom: 3em;
     grid-template-columns: 5% repeat(3, 30%) 5%;
     grid-template-rows: 15% repeat(2, 41.5%);
     margin-bottom: 2em;
-    row-gap: 0;
-
-
 }
 
 #tituloSeccionUnoFestival {
@@ -2318,7 +2314,6 @@ padding: 1em 0 0 0;
 #seccionUnoFestival {
     grid-template-columns: repeat(3, 33.3%);
     grid-template-rows: 20vh repeat(2, 21vh);
-    row-gap: 0;
     padding-top: 5rem;
     margin-bottom: 0;
 
