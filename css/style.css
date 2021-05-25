@@ -840,7 +840,7 @@ th {
     text-align: center;
     background-color: rgb(35, 36, 37);
     position: sticky;
-    top: 4.9em;
+    top: 6em;
     z-index: 10;
 }
 
@@ -993,14 +993,14 @@ table {
     border-bottom: .1em solid rgba(35, 36, 37);
 }
 
-table tr th:nth-of-type(4){
+.acreditacionTabla tr th:nth-of-type(4){
     width: 50%;
 }
 
 .acreditacionTabla tr td:last-of-type{
    padding: 1em 1em;
 }
-table tr td:nth-of-type(3){
+.acreditacionTabla tr td:nth-of-type(3){
     padding: 0;
 }
 .table-dark p{
@@ -1185,7 +1185,7 @@ button, input, optgroup, select, text {
     z-index: 999;
     grid-column: 3/ 5;
     grid-row: 1 / 2;
-    font-size: 3.5em;
+    font-size: 3.3vw;
     align-self: flex-end;
     margin-left: 10%;
 }
@@ -1681,7 +1681,7 @@ table tr th {
     overflow: scroll;
 }
 
-table tr th:nth-of-type(4){
+.acreditacionTabla tr th:nth-of-type(4){
     width: 35%;
 }
 
@@ -1971,6 +1971,12 @@ table tr th:nth-of-type(4){
 
 /**Home ----------------------------------------------------------------------------*/
 
+#compraEntrada {
+    left: auto;
+    right: 0;
+    bottom: 0;
+
+}
 
    #homeImage h1 {
        font-size: 7vw;  
@@ -1980,12 +1986,14 @@ table tr th:nth-of-type(4){
    }
    
    #lugarPosicion {
-       margin: 0 2em 2em 0;
+       align-self: flex-start;
+       margin: 45% 2em 0 0;
      
     }
     
     #edicionPosicion{
-        margin: 0 0 2em 2em;
+        align-self: flex-start;
+        margin: 45% 0 0 2em;
     
     }
     
@@ -2292,9 +2300,6 @@ padding: 1em 0 0 0;
     margin-top: 3em;
 }
 
-#pagesImage #error #festivalPosicion {
-    grid-row: 4/5;
-}
 
 /**el festival----------------------------------------------------------------------------*/
 
@@ -2389,11 +2394,11 @@ padding: 1em 0 0 0;
     dl, ol, ul {
       margin-bottom: 0;
   }
-  table tr th:nth-of-type(2) {
+  .acreditacionTabla tr th:nth-of-type(2) {
    width: 35%;
 
 }
-  table tr th:nth-of-type(4) {
+.acreditacionTabla tr th:nth-of-type(4) {
   width: 100%;
   }
 
@@ -2401,7 +2406,9 @@ padding: 1em 0 0 0;
     #elFestivalBajada h3 {
         font-size: 1em;
     }
-    
+    .acreditacionTabla .estrellas li, .acreditacionTabla ol li  {
+        font-size: unset;
+        } 
 /**observatorio----------------------------------------------------------------------------*/
 
 .iconosFijosSecciones {
@@ -2459,9 +2466,26 @@ padding: 1em 0 0 0;
    }
 
   #tablaObservatorio {
-      height: auto;
+      width: 100vw;
+      max-width: 100%;
+      overflow: scroll;
+      position: relative;
   }
-  
+
+
+  .table-dark tr th{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 20;
+}
+
+.table-dark tr td:first-of-type {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 20;
+}
 .imagenTabla {
     width: 10em;
     height: 10em;
