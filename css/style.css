@@ -1681,6 +1681,10 @@ margin-bottom: 3em;
 #tituloMovimientoUno {
     max-width: 800%;
 }
+
+#tituloMovimientoDos {
+    max-width: 500%;
+}
 table tr th {
     top: 0;
 }
@@ -1904,6 +1908,10 @@ table tr th {
 #notFound{
     margin-top: 0;
 }
+#pagesImage #error, #errorBody #pagesImage  {
+    height: 85vh;
+}
+
 
 
 
@@ -1980,11 +1988,18 @@ table tr th {
     .imagenFestivalContenedor {
         height: 40vh;
     }
-
+/**el festival----------------------------------------------------------------------------*/
 
     .tableContainer th:nth-of-type(4){
         margin:0 20%;
     
+    }
+    #tituloMovimientoUno {
+        max-width: 400%;
+    }
+    
+    #tituloMovimientoDos {
+        max-width: 400%;
     }
 
     /**contacto ----------------------------------------------------------------------------*/
@@ -1998,7 +2013,11 @@ table tr th {
         height:auto;
     } 
     
-   
+   /**Not Found----------------------------------------------------------------------------*/
+
+    #pagesImage #error, #errorBody #pagesImage  {
+    height: auto;
+    }
 }
 
 
@@ -2184,10 +2203,10 @@ padding: 1em 0 0 0;
    }
 
    #elFestivalBajada h3{
- font-size: 1.2em;
- width: auto;
- margin: 0;
-}
+    font-size: 1.2em;
+    width: auto;
+    margin: 0;
+    }
 
 
 .lineaEstrellas{
@@ -2196,10 +2215,10 @@ padding: 1em 0 0 0;
     position: center;
    }
 
-   #elFestivalBajada #datosPie p{
+#elFestivalBajada #datosPie p{
        font-size:.8em;
        letter-spacing: .04em;
-   }
+}
 
  
 
@@ -2207,18 +2226,18 @@ padding: 1em 0 0 0;
     padding: 3em 0;
 }
 
-   #resumenActividades {
+#resumenActividades {
        padding: 0;
        padding-bottom: 3em;
    }
-   .contenedorGris {
-       width: 90%;
-       margin: 0;
-       padding: 0;
-       }
+.contenedorGris {
+    width: 90%;
+    margin: 0;
+    padding: 0;
+}
    
-       .contenedorGris:nth-of-type(1) {
-        margin-top: 2em;  
+.contenedorGris:nth-of-type(1) {
+    margin-top: 2em;  
 }
 
    .contenedorGris:nth-of-type(2) {
